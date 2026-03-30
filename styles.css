@@ -215,15 +215,30 @@ button {
 }
 
 .gnb__logo {
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--text-white);
-  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  height: 36px;
 }
 
-.gnb--scrolled .gnb__logo {
-  color: var(--primary);
+.gnb__logo img {
+  height: 32px;
+  width: auto;
+}
+
+.gnb__logo-white {
+  display: block;
+}
+
+.gnb__logo-color {
+  display: none;
+}
+
+.gnb--scrolled .gnb__logo-white {
+  display: none;
+}
+
+.gnb--scrolled .gnb__logo-color {
+  display: block;
 }
 
 .gnb__nav {
