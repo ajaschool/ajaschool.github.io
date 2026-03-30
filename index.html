@@ -1,785 +1,985 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AJASCHOOL | AI EduTech 기업</title>
-  <meta name="description" content="아자스쿨은 체험학습 플랫폼을 기반으로 B2C 서비스, B2B 교육 운영, AI 기술, 대학·글로벌 협력을 연결하는 AI EduTech 기업입니다." />
-  <meta name="keywords" content="아자스쿨, AJASCHOOL, 체험학습, AI EduTech, B2B 교육, 글로벌 교육" />
-  <meta property="og:title" content="AJASCHOOL | AI EduTech 기업" />
-  <meta property="og:description" content="기술과 사람을 연결해 교육의 가능성을 확장합니다" />
-  <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-<!-- ============================================================
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJASCHOOL | AI EduTech 기업</title>
+    <meta
+      name="description"
+      content="아자스쿨은 체험학습 플랫폼을 기반으로 B2C 서비스, B2B 교육 운영, AI 기술, 대학·글로벌 협력을 연결하는 AI EduTech 기업입니다."
+    />
+    <meta
+      name="keywords"
+      content="아자스쿨, AJASCHOOL, 체험학습, AI EduTech, B2B 교육, 글로벌 교육"
+    />
+    <meta property="og:title" content="AJASCHOOL | AI EduTech 기업" />
+    <meta
+      property="og:description"
+      content="기술과 사람을 연결해 교육의 가능성을 확장합니다"
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============================================================
      GNB
      ============================================================ -->
-<header class="gnb">
-  <div class="gnb__inner">
-    <a href="#hero" class="gnb__logo">AJASCHOOL</a>
+    <header class="gnb">
+      <div class="gnb__inner">
+        <a href="#hero" class="gnb__logo">AJASCHOOL</a>
 
-    <nav class="gnb__nav">
-      <a href="#about" class="gnb__link">ABOUT</a>
-      <a href="#business" class="gnb__link">BUSINESS</a>
-      <a href="#tech" class="gnb__link">TECH &amp; AI</a>
-      <a href="#impact" class="gnb__link">IMPACT</a>
-      <a href="#partners" class="gnb__link">PARTNERS</a>
-      <a href="#news" class="gnb__link">NEWS</a>
-      <a href="#contact" class="gnb__link">CONTACT</a>
-      <a href="https://www.ajaschool.com" target="_blank" rel="noopener" class="gnb__platform">PLATFORM</a>
+        <nav class="gnb__nav">
+          <a href="#about" class="gnb__link">ABOUT</a>
+          <a href="#business" class="gnb__link">BUSINESS</a>
+          <a href="#tech" class="gnb__link">TECH &amp; AI</a>
+          <a href="#impact" class="gnb__link">IMPACT</a>
+          <a href="#partners" class="gnb__link">PARTNERS</a>
+          <a href="#news" class="gnb__link">NEWS</a>
+          <a href="#contact" class="gnb__link">CONTACT</a>
+          <a
+            href="https://www.ajaschool.com"
+            target="_blank"
+            rel="noopener"
+            class="gnb__platform"
+            >PLATFORM</a
+          >
+        </nav>
+
+        <button class="gnb__hamburger" aria-label="메뉴 열기">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile drawer -->
+    <div class="gnb__overlay"></div>
+    <nav class="gnb__drawer">
+      <button class="gnb__drawer-close" aria-label="메뉴 닫기">&times;</button>
+      <a href="#about" class="gnb__drawer-link">ABOUT</a>
+      <a href="#business" class="gnb__drawer-link">BUSINESS</a>
+      <a href="#tech" class="gnb__drawer-link">TECH &amp; AI</a>
+      <a href="#impact" class="gnb__drawer-link">IMPACT</a>
+      <a href="#partners" class="gnb__drawer-link">PARTNERS</a>
+      <a href="#news" class="gnb__drawer-link">NEWS</a>
+      <a href="#contact" class="gnb__drawer-link">CONTACT</a>
+      <a
+        href="https://www.ajaschool.com"
+        target="_blank"
+        rel="noopener"
+        class="gnb__drawer-link"
+        style="color: var(--accent); font-weight: 600"
+        >PLATFORM →</a
+      >
     </nav>
 
-    <button class="gnb__hamburger" aria-label="메뉴 열기">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<!-- Mobile drawer -->
-<div class="gnb__overlay"></div>
-<nav class="gnb__drawer">
-  <button class="gnb__drawer-close" aria-label="메뉴 닫기">&times;</button>
-  <a href="#about" class="gnb__drawer-link">ABOUT</a>
-  <a href="#business" class="gnb__drawer-link">BUSINESS</a>
-  <a href="#tech" class="gnb__drawer-link">TECH &amp; AI</a>
-  <a href="#impact" class="gnb__drawer-link">IMPACT</a>
-  <a href="#partners" class="gnb__drawer-link">PARTNERS</a>
-  <a href="#news" class="gnb__drawer-link">NEWS</a>
-  <a href="#contact" class="gnb__drawer-link">CONTACT</a>
-  <a href="https://www.ajaschool.com" target="_blank" rel="noopener" class="gnb__drawer-link" style="color:var(--accent);font-weight:600;">PLATFORM →</a>
-</nav>
-
-<!-- ============================================================
+    <!-- ============================================================
      HERO
      ============================================================ -->
-<section id="hero" class="hero">
-  <div class="container">
-    <div class="hero__content">
-      <h1 class="hero__headline">기술과 사람을 연결해<br>교육의 가능성을 확장합니다</h1>
-      <p class="hero__sub">
-        아자스쿨은 체험학습 플랫폼을 기반으로<br>
-        B2C 서비스, B2B 교육 운영, AI 기술, 대학·글로벌 협력을 연결하는<br>
-        AI EduTech 기업입니다.<br>
-        교육의 선택은 더 쉬워지고, 운영은 더 정교해지며,<br>
-        지역과 사람은 더 크게 연결됩니다.
-      </p>
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__headline">
+            기술과 사람을 연결해<br />교육의 가능성을 확장합니다
+          </h1>
+          <p class="hero__sub">
+            아자스쿨은 체험학습 플랫폼을 기반으로<br />
+            B2C 서비스, B2B 교육 운영, AI 기술, 대학·글로벌 협력을 연결하는<br />
+            AI EduTech 기업입니다.<br />
+            교육의 선택은 더 쉬워지고, 운영은 더 정교해지며,<br />
+            지역과 사람은 더 크게 연결됩니다.
+          </p>
 
-      <div class="hero__pills">
-        <span class="hero__pill">체험학습 플랫폼 운영</span>
-        <span class="hero__pill">기업·학교·기관 맞춤형 교육 실행</span>
-        <span class="hero__pill">AI 기반 추천·진로진단·자동 보고서 고도화</span>
-        <span class="hero__pill">대학·지역·글로벌 교육사업 확장</span>
+          <div class="hero__pills">
+            <span class="hero__pill">체험학습 플랫폼 운영</span>
+            <span class="hero__pill">기업·학교·기관 맞춤형 교육 실행</span>
+            <span class="hero__pill"
+              >AI 기반 추천·진로진단·자동 보고서 고도화</span
+            >
+            <span class="hero__pill">대학·지역·글로벌 교육사업 확장</span>
+          </div>
+
+          <div class="hero__ctas">
+            <a href="#contact" class="btn btn--accent">사업 문의하기</a>
+            <a href="#about" class="btn btn--outline-white">회사 소개 보기</a>
+            <a
+              href="https://www.ajaschool.com"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline-white"
+              >PLATFORM 바로가기</a
+            >
+          </div>
+
+          <p class="hero__bottom-copy">
+            아자스쿨은 교육 운영 기업들과 함께 성장하며,<br />
+            지역 콘텐츠를 기반으로 강사 일자리를 만들고<br />
+            지역경제 활성화에 기여하는 확장형 교육 플랫폼을 지향합니다.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="hero__ctas">
-        <a href="#contact" class="btn btn--accent">사업 문의하기</a>
-        <a href="#about" class="btn btn--outline-white">회사 소개 보기</a>
-        <a href="https://www.ajaschool.com" target="_blank" rel="noopener" class="btn btn--outline-white">PLATFORM 바로가기</a>
-      </div>
-
-      <p class="hero__bottom-copy">
-        아자스쿨은 교육 운영 기업들과 함께 성장하며,<br>
-        지역 콘텐츠를 기반으로 강사 일자리를 만들고<br>
-        지역경제 활성화에 기여하는 확장형 교육 플랫폼을 지향합니다.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+    <!-- ============================================================
      AT A GLANCE
      ============================================================ -->
-<section id="glance" class="glance">
-  <div class="container">
-    <div class="glance__header reveal">
-      <p class="section-label">Overview</p>
-      <h2 class="section-title">AJASCHOOL at a Glance</h2>
-      <p class="section-lead section-lead--center">
-        아자스쿨은 단순한 체험학습 정보 플랫폼이 아닙니다.<br>
-        플랫폼을 기반으로 교육 프로그램을 설계하고,<br>
-        운영을 시스템화하며, 기술을 통해 더 큰 확장을 준비하는<br>
-        실행형 에듀테크 기업입니다.
-      </p>
-    </div>
+    <section id="glance" class="glance">
+      <div class="container">
+        <div class="glance__header reveal">
+          <p class="section-label">Overview</p>
+          <h2 class="section-title">AJASCHOOL at a Glance</h2>
+          <p class="section-lead section-lead--center">
+            아자스쿨은 단순한 체험학습 정보 플랫폼이 아닙니다.<br />
+            플랫폼을 기반으로 교육 프로그램을 설계하고,<br />
+            운영을 시스템화하며, 기술을 통해 더 큰 확장을 준비하는<br />
+            실행형 에듀테크 기업입니다.
+          </p>
+        </div>
 
-    <div class="glance__grid">
-      <div class="glance__card reveal">
-        <p class="glance__card-num">01</p>
-        <h3 class="glance__card-title">PLATFORM</h3>
-        <p class="glance__card-desc">
-          체험학습 선택을 더 쉽고 넓게<br>
-          수요자에게는 더 많은 선택지를,<br>
-          공급자에게는 더 넓은 연결 기회를 제공합니다.
-        </p>
+        <div class="glance__grid">
+          <div class="glance__card reveal">
+            <p class="glance__card-num">01</p>
+            <h3 class="glance__card-title">PLATFORM</h3>
+            <p class="glance__card-desc">
+              체험학습 선택을 더 쉽고 넓게<br />
+              수요자에게는 더 많은 선택지를,<br />
+              공급자에게는 더 넓은 연결 기회를 제공합니다.
+            </p>
+          </div>
+          <div class="glance__card reveal">
+            <p class="glance__card-num">02</p>
+            <h3 class="glance__card-title">OPERATION</h3>
+            <p class="glance__card-desc">
+              기업·학교·기관 맞춤형 교육 실행<br />
+              목적에 맞는 프로그램을 기획하고<br />
+              현장까지 안정적으로 운영합니다.
+            </p>
+          </div>
+          <div class="glance__card reveal">
+            <p class="glance__card-num">03</p>
+            <h3 class="glance__card-title">TECHNOLOGY</h3>
+            <p class="glance__card-desc">
+              AI 기반 추천과 운영 자동화<br />
+              추천, 진단, 결과 정리까지<br />
+              교육 운영의 비효율을 줄입니다.
+            </p>
+          </div>
+          <div class="glance__card reveal">
+            <p class="glance__card-num">04</p>
+            <h3 class="glance__card-title">EXPANSION</h3>
+            <p class="glance__card-desc">
+              대학·지역·글로벌 교육사업으로 성장<br />
+              대학 협력, 지역 콘텐츠 연계, 해외 파트너십을 통해<br />
+              교육의 새로운 시장을 확장합니다.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="glance__card reveal">
-        <p class="glance__card-num">02</p>
-        <h3 class="glance__card-title">OPERATION</h3>
-        <p class="glance__card-desc">
-          기업·학교·기관 맞춤형 교육 실행<br>
-          목적에 맞는 프로그램을 기획하고<br>
-          현장까지 안정적으로 운영합니다.
-        </p>
-      </div>
-      <div class="glance__card reveal">
-        <p class="glance__card-num">03</p>
-        <h3 class="glance__card-title">TECHNOLOGY</h3>
-        <p class="glance__card-desc">
-          AI 기반 추천과 운영 자동화<br>
-          추천, 진단, 결과 정리까지<br>
-          교육 운영의 비효율을 줄입니다.
-        </p>
-      </div>
-      <div class="glance__card reveal">
-        <p class="glance__card-num">04</p>
-        <h3 class="glance__card-title">EXPANSION</h3>
-        <p class="glance__card-desc">
-          대학·지역·글로벌 교육사업으로 성장<br>
-          대학 협력, 지역 콘텐츠 연계, 해외 파트너십을 통해<br>
-          교육의 새로운 시장을 확장합니다.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ============================================================
+    <!-- ============================================================
      IMPACT
      ============================================================ -->
-<section id="impact" class="impact">
-  <div class="container">
-    <div class="impact__header reveal">
-      <p class="section-label">Impact</p>
-      <h2 class="section-title">Impact Backed by Real Projects</h2>
-      <p class="section-lead section-lead--center">
-        아자스쿨은 다양한 현장에서 교육 프로젝트를 실제로 실행해왔습니다.<br>
-        성과는 말보다 분명합니다.<br>
-        운영 사례와 지표는 아자스쿨의 실행력과 성장 가능성을 보여주는 가장 명확한 증거입니다.
-      </p>
-    </div>
+    <section id="impact" class="impact">
+      <div class="container">
+        <div class="impact__header reveal">
+          <p class="section-label">Impact</p>
+          <h2 class="section-title">Impact Backed by Real Projects</h2>
+          <p class="section-lead section-lead--center">
+            아자스쿨은 다양한 현장에서 교육 프로젝트를 실제로 실행해왔습니다.<br />
+            성과는 말보다 분명합니다.<br />
+            운영 사례와 지표는 아자스쿨의 실행력과 성장 가능성을 보여주는 가장
+            명확한 증거입니다.
+          </p>
+        </div>
 
-    <!-- 운영 지표 -->
-    <div class="impact__metrics reveal">
-      <div class="impact__metric">
-        <p class="impact__metric-num" data-count="5350" data-suffix="개">0</p>
-        <p class="impact__metric-label">누적 등록 체험학습 수</p>
-      </div>
-      <div class="impact__metric">
-        <p class="impact__metric-num" data-count="350" data-suffix="개">0</p>
-        <p class="impact__metric-label">협력 기관 수</p>
-      </div>
-      <div class="impact__metric">
-        <p class="impact__metric-num" data-count="720" data-suffix="개">0</p>
-        <p class="impact__metric-label">직접 운영 프로그램 수</p>
-      </div>
-      <div class="impact__metric">
-        <p class="impact__metric-num" data-count="340000" data-suffix="명">0</p>
-        <p class="impact__metric-label">누적 참여 인원</p>
-      </div>
-      <div class="impact__metric">
-        <p class="impact__metric-num" data-count="550" data-suffix="회">0</p>
-        <p class="impact__metric-label">기업·학교·기관 프로젝트 수</p>
-      </div>
-      <div class="impact__metric">
-        <p class="impact__metric-num" data-count="15" data-suffix="건">0</p>
-        <p class="impact__metric-label">글로벌 협업 건수</p>
-      </div>
-    </div>
+        <!-- 운영 지표 -->
+        <div class="impact__metrics reveal">
+          <div class="impact__metric">
+            <p class="impact__metric-num" data-count="5350" data-suffix="+">
+              0
+            </p>
+            <p class="impact__metric-label">누적 등록 체험학습 수</p>
+          </div>
+          <div class="impact__metric">
+            <p class="impact__metric-num" data-count="350" data-suffix="+">0</p>
+            <p class="impact__metric-label">협력 기관 수</p>
+          </div>
+          <div class="impact__metric">
+            <p class="impact__metric-num" data-count="720" data-suffix="+">0</p>
+            <p class="impact__metric-label">직접 운영 프로그램 수</p>
+          </div>
+          <div class="impact__metric">
+            <p class="impact__metric-num" data-count="340000" data-suffix="+">
+              0
+            </p>
+            <p class="impact__metric-label">누적 참여 인원</p>
+          </div>
+          <div class="impact__metric">
+            <p class="impact__metric-num" data-count="550" data-suffix="+">0</p>
+            <p class="impact__metric-label">기업·학교·기관 프로젝트 수</p>
+          </div>
+          <div class="impact__metric">
+            <p class="impact__metric-num" data-count="15" data-suffix="+">0</p>
+            <p class="impact__metric-label">글로벌 협업 건수</p>
+          </div>
+        </div>
 
-    <p class="impact__bottom-copy reveal">
-      숫자는 아자스쿨이 현장에서 쌓아온 신뢰의 기록이자,<br>
-      앞으로의 성장 가능성을 보여주는 가장 현실적인 언어입니다.
-    </p>
+        <p class="impact__bottom-copy reveal">
+          숫자는 아자스쿨이 현장에서 쌓아온 신뢰의 기록이자,<br />
+          앞으로의 성장 가능성을 보여주는 가장 현실적인 언어입니다.
+        </p>
 
-    <!-- 케이스 스터디 -->
-    <div class="reveal" style="margin-top:64px;">
-      <h3 class="impact__cases-title">Case Studies</h3>
-      <div class="impact__cases-grid">
-        <div class="impact__case">기업 맞춤형 진로·체험 캠프 운영</div>
-        <div class="impact__case">학교·대학 연계 실습형 프로그램 기획</div>
-        <div class="impact__case">공공기관 협력형 교육 프로젝트 수행</div>
-        <div class="impact__case">글로벌 파트너십 기반 프로그램 운영</div>
+        <!-- 케이스 스터디 -->
+        <div class="reveal" style="margin-top: 64px">
+          <h3 class="impact__cases-title">Case Studies</h3>
+          <div class="impact__cases-grid">
+            <div class="impact__case">기업 맞춤형 진로·체험 캠프 운영</div>
+            <div class="impact__case">학교·대학 연계 실습형 프로그램 기획</div>
+            <div class="impact__case">공공기관 협력형 교육 프로젝트 수행</div>
+            <div class="impact__case">글로벌 파트너십 기반 프로그램 운영</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ============================================================
+    <!-- ============================================================
      ABOUT
      ============================================================ -->
-<section id="about" class="about">
-  <div class="container">
+    <section id="about" class="about">
+      <div class="container">
+        <!-- 기업 개요 -->
+        <div class="about__overview reveal">
+          <p class="section-label">About</p>
+          <h2 class="section-title">
+            교육의 선택과 실행을 연결하는 기업, AJASCHOOL
+          </h2>
+          <p class="about__body">
+            아자스쿨은 B2C 체험학습 플랫폼을 운영하는 동시에 학교, 기업, 대학,
+            공공기관을 위한 맞춤형 프로그램을 기획·운영하는 교육 전문
+            기업입니다.<br /><br />
+            우리는 단순히 정보를 연결하는 데 그치지 않습니다. 누가, 왜, 어떤
+            방식으로 교육을 필요로 하는지 이해하고, 그 목적에 맞는 프로그램을
+            설계하며, 운영과 결과까지 책임지는 구조를 만들어갑니다.<br /><br />
+            플랫폼의 편의성과 현장의 실행력을 함께 갖춘 것, 그것이 아자스쿨의
+            가장 큰 경쟁력입니다.
+          </p>
+        </div>
 
-    <!-- 기업 개요 -->
-    <div class="about__overview reveal">
-      <p class="section-label">About</p>
-      <h2 class="section-title">교육의 선택과 실행을 연결하는 기업, AJASCHOOL</h2>
-      <p class="about__body">
-        아자스쿨은 B2C 체험학습 플랫폼을 운영하는 동시에
-        학교, 기업, 대학, 공공기관을 위한 맞춤형 프로그램을 기획·운영하는 교육 전문 기업입니다.<br><br>
-        우리는 단순히 정보를 연결하는 데 그치지 않습니다.
-        누가, 왜, 어떤 방식으로 교육을 필요로 하는지 이해하고,
-        그 목적에 맞는 프로그램을 설계하며,
-        운영과 결과까지 책임지는 구조를 만들어갑니다.<br><br>
-        플랫폼의 편의성과 현장의 실행력을 함께 갖춘 것,
-        그것이 아자스쿨의 가장 큰 경쟁력입니다.
-      </p>
-    </div>
+        <!-- 미션 / 비전 -->
+        <div class="about__mv reveal">
+          <div class="about__mv-card">
+            <p class="about__mv-label">Mission</p>
+            <h3 class="about__mv-title">
+              교육의 선택은 더 쉽게, 실행은 더 정교하게
+            </h3>
+            <p class="about__mv-desc">
+              아자스쿨은 교육 수요자와 공급자, 기관과 현장, 기술과 사람을
+              연결하여 누구나 더 나은 체험형 교육을 더 쉽게 선택하고 더
+              안정적으로 실행할 수 있는 환경을 만듭니다.
+            </p>
+          </div>
+          <div class="about__mv-card">
+            <p class="about__mv-label">Vision</p>
+            <h3 class="about__mv-title">
+              체험형 교육 시장을 연결하는 대표 AI EduTech 기업
+            </h3>
+            <p class="about__mv-desc">
+              아자스쿨은 플랫폼, 운영, AI 기술, 대학 협력, 글로벌 네트워크를
+              바탕으로 대한민국을 넘어 더 넓은 교육 생태계로 확장해 나갑니다.
+              특히 대학·지역·글로벌 교육사업으로의 성장을 명확한 확장 축으로
+              삼고 있습니다.
+            </p>
+          </div>
+        </div>
 
-    <!-- 미션 / 비전 -->
-    <div class="about__mv reveal">
-      <div class="about__mv-card">
-        <p class="about__mv-label">Mission</p>
-        <h3 class="about__mv-title">교육의 선택은 더 쉽게, 실행은 더 정교하게</h3>
-        <p class="about__mv-desc">
-          아자스쿨은 교육 수요자와 공급자, 기관과 현장, 기술과 사람을 연결하여
-          누구나 더 나은 체험형 교육을 더 쉽게 선택하고
-          더 안정적으로 실행할 수 있는 환경을 만듭니다.
-        </p>
+        <!-- 핵심 가치 -->
+        <div class="about__values reveal">
+          <p class="section-label">Core Values</p>
+          <h2 class="section-title">핵심 가치</h2>
+          <div class="about__values-grid">
+            <div class="about__value">
+              <p class="about__value-name">Connection</p>
+              <p class="about__value-desc">
+                기술과 사람, 기관과 현장, 지역과 기회를 연결합니다.
+              </p>
+            </div>
+            <div class="about__value">
+              <p class="about__value-name">Execution</p>
+              <p class="about__value-desc">
+                좋은 아이디어를 실제 성과로 이어지게 만드는 실행력을 중시합니다.
+              </p>
+            </div>
+            <div class="about__value">
+              <p class="about__value-name">Trust</p>
+              <p class="about__value-desc">
+                데이터, 운영 체계, 파트너십을 통해 신뢰를 구축합니다.
+              </p>
+            </div>
+            <div class="about__value">
+              <p class="about__value-name">Innovation</p>
+              <p class="about__value-desc">
+                AI와 디지털 기술로 교육 운영 방식을 지속적으로 고도화합니다.
+              </p>
+            </div>
+            <div class="about__value">
+              <p class="about__value-name">Expansion</p>
+              <p class="about__value-desc">
+                플랫폼을 넘어 대학, 지역, 글로벌 시장으로 확장합니다.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="about__mv-card">
-        <p class="about__mv-label">Vision</p>
-        <h3 class="about__mv-title">체험형 교육 시장을 연결하는 대표 AI EduTech 기업</h3>
-        <p class="about__mv-desc">
-          아자스쿨은 플랫폼, 운영, AI 기술, 대학 협력, 글로벌 네트워크를 바탕으로
-          대한민국을 넘어 더 넓은 교육 생태계로 확장해 나갑니다.
-          특히 대학·지역·글로벌 교육사업으로의 성장을 명확한 확장 축으로 삼고 있습니다.
-        </p>
-      </div>
-    </div>
+    </section>
 
-    <!-- 핵심 가치 -->
-    <div class="about__values reveal">
-      <p class="section-label">Core Values</p>
-      <h2 class="section-title">핵심 가치</h2>
-      <div class="about__values-grid">
-        <div class="about__value">
-          <p class="about__value-name">Connection</p>
-          <p class="about__value-desc">기술과 사람, 기관과 현장, 지역과 기회를 연결합니다.</p>
-        </div>
-        <div class="about__value">
-          <p class="about__value-name">Execution</p>
-          <p class="about__value-desc">좋은 아이디어를 실제 성과로 이어지게 만드는 실행력을 중시합니다.</p>
-        </div>
-        <div class="about__value">
-          <p class="about__value-name">Trust</p>
-          <p class="about__value-desc">데이터, 운영 체계, 파트너십을 통해 신뢰를 구축합니다.</p>
-        </div>
-        <div class="about__value">
-          <p class="about__value-name">Innovation</p>
-          <p class="about__value-desc">AI와 디지털 기술로 교육 운영 방식을 지속적으로 고도화합니다.</p>
-        </div>
-        <div class="about__value">
-          <p class="about__value-name">Expansion</p>
-          <p class="about__value-desc">플랫폼을 넘어 대학, 지역, 글로벌 시장으로 확장합니다.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ============================================================
+    <!-- ============================================================
      HISTORY (다크 배경 타임라인)
      ============================================================ -->
-<section id="history" class="history">
-  <div class="container">
-    <div class="reveal">
-      <p class="section-label">History</p>
-      <h2 class="section-title">꾸준한 성장과 미래 확장</h2>
-    </div>
+    <section id="history" class="history">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">History</p>
+          <h2 class="section-title">꾸준한 성장과 미래 확장</h2>
+        </div>
 
-    <div class="history__layout reveal">
-      <!-- 좌측 탭 -->
-      <div class="history__tabs">
-        <button class="history__tab history__tab--active" data-era="era1">2024년 ~ 현재</button>
-        <button class="history__tab" data-era="era2">2020년 ~ 2023년</button>
-        <button class="history__tab" data-era="era3">2016년 ~ 2019년</button>
+        <div class="history__layout reveal">
+          <!-- 좌측 탭 -->
+          <div class="history__tabs">
+            <button class="history__tab history__tab--active" data-era="era1">
+              2024년 ~ 현재
+            </button>
+            <button class="history__tab" data-era="era2">
+              2020년 ~ 2023년
+            </button>
+            <button class="history__tab" data-era="era3">
+              2016년 ~ 2019년
+            </button>
+          </div>
+
+          <!-- 우측 콘텐츠 -->
+          <div class="history__content">
+            <!-- 2024 ~ -->
+            <div class="history__era history__era--active" data-era="era1">
+              <p class="history__year">2024</p>
+              <div class="history__list">
+                <div class="history__item">
+                  NAVER 체험학습 분야 API 콘텐츠 단독파트너
+                </div>
+                <div class="history__item">베트남 다낭 주요 4개 대학 MOU</div>
+                <div class="history__item">
+                  신한스퀘어브릿지 글로벌 지원 사업자 선정(베트남)
+                </div>
+                <div class="history__item">
+                  이집트 INNOVATRA 디지털AI 교육 MOU
+                </div>
+                <div class="history__item">
+                  싱가폴 NEW LIGHT 청소년 경제교육 MOU
+                </div>
+                <div class="history__item">서울시 AI딥테크 사업자 선정</div>
+                <div class="history__item">하이서울기업 선정</div>
+                <div class="history__item">서울시 여성공예센터 MOU</div>
+                <div class="history__item">여가부 한국청소년활동진흥원 MOU</div>
+                <div class="history__item">청소년수련시설협회 MOU</div>
+                <div class="history__item">아자스쿨 베트남 다낭 워케이션</div>
+                <div class="history__item">평택외국인복지센터 MOU</div>
+              </div>
+            </div>
+
+            <!-- 2020 ~ 2023 -->
+            <div class="history__era" data-era="era2">
+              <p class="history__year">2020</p>
+              <div class="history__list">
+                <div class="history__item">아자스쿨 공식 서비스 오픈</div>
+                <div class="history__item">
+                  서울시 중국 투자협력의날 사업자 선정
+                </div>
+                <div class="history__item">서울시 CORE100 사업자 선정</div>
+                <div class="history__item">
+                  산업자원부 ICT 투자지원사업 선정
+                </div>
+                <div class="history__item">E-LAND 우수 지원사업자 선정</div>
+                <div class="history__item">
+                  산업자원부/벤처기업협회 IR 상정지원 사업자 선정
+                </div>
+                <div class="history__item">
+                  부산창조경제X롯데 이노베이션 사업자 선정
+                </div>
+                <div class="history__item">
+                  KOCCA VR 실감 콘텐츠 지원 사업자 선정
+                </div>
+                <div class="history__item">NIPA AI 지원 사업자 선정</div>
+                <div class="history__item">
+                  아자탐구생활 일산/평택/송파 오픈
+                </div>
+                <div class="history__item">
+                  롯데월드 오픈이노베이션 사업자 선정
+                </div>
+                <div class="history__item">
+                  KDB NEXT ROUND IR 지원 사업자 선정
+                </div>
+                <div class="history__item">
+                  중기부 창업도약패키지 사업자 선정
+                </div>
+                <div class="history__item">IBK창공 9기 사업자 선정</div>
+                <div class="history__item">중기부 장관상 수상</div>
+              </div>
+            </div>
+
+            <!-- 2016 ~ 2019 -->
+            <div class="history__era" data-era="era3">
+              <p class="history__year">2016</p>
+              <div class="history__list">
+                <div class="history__item">아자스쿨 설립</div>
+                <div class="history__item">벤처기업 인증</div>
+                <div class="history__item">
+                  한국벤처투자 시트투자, 후마니타스투자조합 투자유치
+                </div>
+                <div class="history__item">KB FUTURE9 선정 및 시드투자</div>
+                <div class="history__item">D.CAMP 1월의 기업 선정</div>
+                <div class="history__item">
+                  L.CAMP 4기 선정 및 롯데벤처스 투자
+                </div>
+                <div class="history__item">이동국선수 투자</div>
+                <div class="history__item">올해의 모바일 우수상 수상(KMA)</div>
+                <div class="history__item">한화드림플러스 라이프부분 선정</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- 우측 콘텐츠 -->
-      <div class="history__content">
-
-        <!-- 2024 ~ -->
-        <div class="history__era history__era--active" data-era="era1">
-          <p class="history__year">2024</p>
-          <div class="history__list">
-            <div class="history__item">NAVER 체험학습 분야 API 콘텐츠 단독파트너</div>
-            <div class="history__item">베트남 다낭 주요 4개 대학 MOU</div>
-            <div class="history__item">신한스퀘어브릿지 글로벌 지원 사업자 선정(베트남)</div>
-            <div class="history__item">이집트 INNOVATRA 디지털AI 교육 MOU</div>
-            <div class="history__item">싱가폴 NEW LIGHT 청소년 경제교육 MOU</div>
-            <div class="history__item">서울시 AI딥테크 사업자 선정</div>
-            <div class="history__item">하이서울기업 선정</div>
-            <div class="history__item">서울시 여성공예센터 MOU</div>
-            <div class="history__item">여가부 한국청소년활동진흥원 MOU</div>
-            <div class="history__item">청소년수련시설협회 MOU</div>
-            <div class="history__item">아자스쿨 베트남 다낭 워케이션</div>
-            <div class="history__item">평택외국인복지센터 MOU</div>
-          </div>
-        </div>
-
-        <!-- 2020 ~ 2023 -->
-        <div class="history__era" data-era="era2">
-          <p class="history__year">2020</p>
-          <div class="history__list">
-            <div class="history__item">아자스쿨 공식 서비스 오픈</div>
-            <div class="history__item">서울시 중국 투자협력의날 사업자 선정</div>
-            <div class="history__item">서울시 CORE100 사업자 선정</div>
-            <div class="history__item">산업자원부 ICT 투자지원사업 선정</div>
-            <div class="history__item">E-LAND 우수 지원사업자 선정</div>
-            <div class="history__item">산업자원부/벤처기업협회 IR 상정지원 사업자 선정</div>
-            <div class="history__item">부산창조경제X롯데 이노베이션 사업자 선정</div>
-            <div class="history__item">KOCCA VR 실감 콘텐츠 지원 사업자 선정</div>
-            <div class="history__item">NIPA AI 지원 사업자 선정</div>
-            <div class="history__item">아자탐구생활 일산/평택/송파 오픈</div>
-            <div class="history__item">롯데월드 오픈이노베이션 사업자 선정</div>
-            <div class="history__item">KDB NEXT ROUND IR 지원 사업자 선정</div>
-            <div class="history__item">중기부 창업도약패키지 사업자 선정</div>
-            <div class="history__item">IBK창공 9기 사업자 선정</div>
-            <div class="history__item">중기부 장관상 수상</div>
-          </div>
-        </div>
-
-        <!-- 2016 ~ 2019 -->
-        <div class="history__era" data-era="era3">
-          <p class="history__year">2016</p>
-          <div class="history__list">
-            <div class="history__item">아자스쿨 설립</div>
-            <div class="history__item">벤처기업 인증</div>
-            <div class="history__item">한국벤처투자 시트투자, 후마니타스투자조합 투자유치</div>
-            <div class="history__item">KB FUTURE9 선정 및 시드투자</div>
-            <div class="history__item">D.CAMP 1월의 기업 선정</div>
-            <div class="history__item">L.CAMP 4기 선정 및 롯데벤처스 투자</div>
-            <div class="history__item">이동국선수 투자</div>
-            <div class="history__item">올해의 모바일 우수상 수상(KMA)</div>
-            <div class="history__item">한화드림플러스 라이프부분 선정</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+    <!-- ============================================================
      BUSINESS
      ============================================================ -->
-<section id="business" class="business">
-  <div class="container">
-    <div class="business__header reveal">
-      <p class="section-label">Business</p>
-      <h2 class="section-title">4 Core Business Areas</h2>
-      <p class="section-lead section-lead--center">
-        아자스쿨은 하나의 서비스에 머무르지 않습니다.<br>
-        플랫폼, 캠프, 대학·AI 교육, 글로벌 사업을 중심으로<br>
-        교육 시장의 다양한 수요를 연결하고 실행합니다.
-      </p>
-    </div>
+    <section id="business" class="business">
+      <div class="container">
+        <div class="business__header reveal">
+          <p class="section-label">Business</p>
+          <h2 class="section-title">4 Core Business Areas</h2>
+          <p class="section-lead section-lead--center">
+            아자스쿨은 하나의 서비스에 머무르지 않습니다.<br />
+            플랫폼, 캠프, 대학·AI 교육, 글로벌 사업을 중심으로<br />
+            교육 시장의 다양한 수요를 연결하고 실행합니다.
+          </p>
+        </div>
 
-    <div class="business__grid">
-      <!-- 플랫폼(B2C) -->
-      <div class="business__card reveal">
-        <p class="business__card-label">B2C Platform</p>
-        <h3 class="business__card-title">B2C Experiential Learning Platform</h3>
-        <p class="business__card-body">
-          아자스쿨은 소비자가 다양한 체험학습을 더 쉽게 찾고, 비교하고, 선택할 수 있도록
-          B2C 체험학습 플랫폼을 운영하고 있습니다.
-          이 플랫폼은 단순한 체험 정보 나열이 아니라
-          수요자와 공급자를 연결하고,
-          체험학습 시장의 접근성과 효율을 높이는 핵심 기반입니다.
-        </p>
-        <div class="business__card-points">
-          <span class="business__card-point">다양한 체험학습 탐색과 선택</span>
-          <span class="business__card-point">AI 기반 맞춤 추천</span>
-          <span class="business__card-point">진로검사 연계 확장</span>
-          <span class="business__card-point">체험보고서 자동화 기능 고도화</span>
+        <div class="business__grid">
+          <!-- 플랫폼(B2C) -->
+          <div class="business__card reveal">
+            <p class="business__card-label">B2C Platform</p>
+            <h3 class="business__card-title">
+              B2C Experiential Learning Platform
+            </h3>
+            <p class="business__card-body">
+              아자스쿨은 소비자가 다양한 체험학습을 더 쉽게 찾고, 비교하고,
+              선택할 수 있도록 B2C 체험학습 플랫폼을 운영하고 있습니다. 이
+              플랫폼은 단순한 체험 정보 나열이 아니라 수요자와 공급자를
+              연결하고, 체험학습 시장의 접근성과 효율을 높이는 핵심 기반입니다.
+            </p>
+            <div class="business__card-points">
+              <span class="business__card-point"
+                >다양한 체험학습 탐색과 선택</span
+              >
+              <span class="business__card-point">AI 기반 맞춤 추천</span>
+              <span class="business__card-point">진로검사 연계 확장</span>
+              <span class="business__card-point"
+                >체험보고서 자동화 기능 고도화</span
+              >
+            </div>
+          </div>
+
+          <!-- B2B 캠프 -->
+          <div class="business__card reveal">
+            <p class="business__card-label">B2B Camp</p>
+            <h3 class="business__card-title">
+              B2B Camp &amp; Program Solutions
+            </h3>
+            <p class="business__card-body">
+              아자스쿨은 기업, 학교, 공공기관의 목적에 맞춘 체험형 캠프와 맞춤형
+              프로그램을 설계하고 운영합니다. 임직원 자녀 대상 프로그램, 고객
+              초청형 캠프, CSR 프로그램, 학교 및 단체 대상 진로·융합·탐방형
+              교육까지 대상과 목적이 다르면 운영 방식도 달라져야 합니다.
+            </p>
+            <div class="business__card-points">
+              <span class="business__card-point">기업 맞춤형 교육·캠프</span>
+              <span class="business__card-point">학교·단체 프로그램 운영</span>
+              <span class="business__card-point"
+                >주제형·진로형·탐방형 설계 가능</span
+              >
+              <span class="business__card-point">원스톱 기획·운영 체계</span>
+            </div>
+          </div>
+
+          <!-- 대학 / AI 교육 -->
+          <div class="business__card reveal">
+            <p class="business__card-label">University &amp; AI</p>
+            <h3 class="business__card-title">University &amp; AI Education</h3>
+            <p class="business__card-body">
+              아자스쿨은 대학 및 교육기관과 협력하여 진로, 창의융합, 실습형
+              프로그램을 운영하고 있으며, AI를 활용한 교육 프로그램과 운영
+              방식의 혁신도 함께 추진하고 있습니다. 대학생, 대학원생, 청소년 등
+              다양한 학습자에게 실제 현장성과 연결된 교육 경험을 제공합니다.
+            </p>
+            <div class="business__card-points">
+              <span class="business__card-point">대학 연계 프로그램</span>
+              <span class="business__card-point">실습형·진로형 교육 운영</span>
+              <span class="business__card-point">AI 기반 교육 확장</span>
+              <span class="business__card-point"
+                >교육 효과성과 실행성 강화</span
+              >
+            </div>
+          </div>
+
+          <!-- 글로벌 사업 -->
+          <div class="business__card reveal">
+            <p class="business__card-label">Global</p>
+            <h3 class="business__card-title">Global Education Business</h3>
+            <p class="business__card-body">
+              아자스쿨은 국내외 교육기관, 해외 파트너, 외국인 대상 사업을 통해
+              글로벌 교육 협력 모델을 확대하고 있습니다. 한국 교육 콘텐츠와
+              체험형 프로그램 운영 역량을 바탕으로 국경을 넘는 교육 협력의
+              가능성을 현실화하고 있습니다.
+            </p>
+            <div class="business__card-points">
+              <span class="business__card-point"
+                >베트남 대학 협력 네트워크(10개 대학)</span
+              >
+              <span class="business__card-point">Egypt INNOVATRA</span>
+              <span class="business__card-point">Singapore NEWLIGHTS</span>
+              <span class="business__card-point"
+                >글로벌 파트너십 기반 사업 확장</span
+              >
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- B2B 캠프 -->
-      <div class="business__card reveal">
-        <p class="business__card-label">B2B Camp</p>
-        <h3 class="business__card-title">B2B Camp &amp; Program Solutions</h3>
-        <p class="business__card-body">
-          아자스쿨은 기업, 학교, 공공기관의 목적에 맞춘
-          체험형 캠프와 맞춤형 프로그램을 설계하고 운영합니다.
-          임직원 자녀 대상 프로그램, 고객 초청형 캠프, CSR 프로그램,
-          학교 및 단체 대상 진로·융합·탐방형 교육까지
-          대상과 목적이 다르면 운영 방식도 달라져야 합니다.
-        </p>
-        <div class="business__card-points">
-          <span class="business__card-point">기업 맞춤형 교육·캠프</span>
-          <span class="business__card-point">학교·단체 프로그램 운영</span>
-          <span class="business__card-point">주제형·진로형·탐방형 설계 가능</span>
-          <span class="business__card-point">원스톱 기획·운영 체계</span>
-        </div>
-      </div>
-
-      <!-- 대학 / AI 교육 -->
-      <div class="business__card reveal">
-        <p class="business__card-label">University &amp; AI</p>
-        <h3 class="business__card-title">University &amp; AI Education</h3>
-        <p class="business__card-body">
-          아자스쿨은 대학 및 교육기관과 협력하여
-          진로, 창의융합, 실습형 프로그램을 운영하고 있으며,
-          AI를 활용한 교육 프로그램과 운영 방식의 혁신도 함께 추진하고 있습니다.
-          대학생, 대학원생, 청소년 등 다양한 학습자에게
-          실제 현장성과 연결된 교육 경험을 제공합니다.
-        </p>
-        <div class="business__card-points">
-          <span class="business__card-point">대학 연계 프로그램</span>
-          <span class="business__card-point">실습형·진로형 교육 운영</span>
-          <span class="business__card-point">AI 기반 교육 확장</span>
-          <span class="business__card-point">교육 효과성과 실행성 강화</span>
-        </div>
-      </div>
-
-      <!-- 글로벌 사업 -->
-      <div class="business__card reveal">
-        <p class="business__card-label">Global</p>
-        <h3 class="business__card-title">Global Education Business</h3>
-        <p class="business__card-body">
-          아자스쿨은 국내외 교육기관, 해외 파트너, 외국인 대상 사업을 통해
-          글로벌 교육 협력 모델을 확대하고 있습니다.
-          한국 교육 콘텐츠와 체험형 프로그램 운영 역량을 바탕으로
-          국경을 넘는 교육 협력의 가능성을 현실화하고 있습니다.
-        </p>
-        <div class="business__card-points">
-          <span class="business__card-point">베트남 대학 협력 네트워크(10개 대학)</span>
-          <span class="business__card-point">Egypt INNOVATRA</span>
-          <span class="business__card-point">Singapore NEWLIGHTS</span>
-          <span class="business__card-point">글로벌 파트너십 기반 사업 확장</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+    <!-- ============================================================
      TECH & AI
      ============================================================ -->
-<section id="tech" class="tech">
-  <div class="container">
-    <div class="tech__header reveal">
-      <p class="section-label">Tech &amp; AI</p>
-      <h2 class="section-title">Technology That Makes Education Work Better</h2>
-      <p class="section-lead section-lead--center">
-        아자스쿨의 기술은 단순한 보조 기능이 아닙니다.<br>
-        교육의 선택, 운영, 기록, 성장 설계를 더 정교하게 만드는<br>
-        실질적인 실행 도구입니다.
-      </p>
-    </div>
+    <section id="tech" class="tech">
+      <div class="container">
+        <div class="tech__header reveal">
+          <p class="section-label">Tech &amp; AI</p>
+          <h2 class="section-title">
+            Technology That Makes Education Work Better
+          </h2>
+          <p class="section-lead section-lead--center">
+            아자스쿨의 기술은 단순한 보조 기능이 아닙니다.<br />
+            교육의 선택, 운영, 기록, 성장 설계를 더 정교하게 만드는<br />
+            실질적인 실행 도구입니다.
+          </p>
+        </div>
 
-    <div class="tech__grid">
-      <!-- AI 추천 엔진 -->
-      <div class="tech__card reveal">
-        <div class="tech__card-icon">&#x1F50D;</div>
-        <h3 class="tech__card-title">AI Recommendation Engine</h3>
-        <p class="tech__card-body">
-          이용자와 기관의 목적에 맞는 프로그램을
-          더 빠르고 더 정확하게 연결하기 위한 AI 추천 구조를 고도화하고 있습니다.
-          체험학습 선택의 복잡성을 줄이고,
-          필요에 더 잘 맞는 프로그램을 발견할 수 있도록 지원합니다.
-        </p>
-        <ul class="tech__card-points">
-          <li>목적 기반 추천</li>
-          <li>맞춤 탐색 경험 강화</li>
-          <li>선택 편의성 향상</li>
-        </ul>
+        <div class="tech__grid">
+          <!-- AI 추천 엔진 -->
+          <div class="tech__card reveal">
+            <div class="tech__card-icon">&#x1F50D;</div>
+            <h3 class="tech__card-title">AI Recommendation Engine</h3>
+            <p class="tech__card-body">
+              이용자와 기관의 목적에 맞는 프로그램을 더 빠르고 더 정확하게
+              연결하기 위한 AI 추천 구조를 고도화하고 있습니다. 체험학습 선택의
+              복잡성을 줄이고, 필요에 더 잘 맞는 프로그램을 발견할 수 있도록
+              지원합니다.
+            </p>
+            <ul class="tech__card-points">
+              <li>목적 기반 추천</li>
+              <li>맞춤 탐색 경험 강화</li>
+              <li>선택 편의성 향상</li>
+            </ul>
+          </div>
+
+          <!-- 자동 보고서 -->
+          <div class="tech__card reveal">
+            <div class="tech__card-icon">&#x1F4CB;</div>
+            <h3 class="tech__card-title">Automated Reporting Solution</h3>
+            <p class="tech__card-body">
+              교육 운영 이후 필요한 결과 정리, 체험 보고, 운영 기록 업무를 보다
+              빠르고 체계적으로 수행할 수 있도록 자동 보고서 솔루션을
+              개발·적용하고 있습니다.
+            </p>
+            <ul class="tech__card-points">
+              <li>체험보고서 자동화</li>
+              <li>운영결과 정리 효율화</li>
+              <li>반복 업무 경감</li>
+              <li>데이터 기반 결과 관리</li>
+            </ul>
+          </div>
+
+          <!-- 커리어맵 -->
+          <div class="tech__card reveal">
+            <div class="tech__card-icon">&#x1F4C8;</div>
+            <h3 class="tech__card-title">Career Map Solution</h3>
+            <p class="tech__card-body">
+              아자스쿨은 체험 제공에 머무르지 않고 학습자와 참가자의 성장
+              흐름까지 연결하는 커리어맵 구조를 확장하고 있습니다. 체험이 하나의
+              이벤트로 끝나는 것이 아니라 진로 탐색과 자기 이해, 다음 학습
+              설계로 이어질 수 있도록 합니다.
+            </p>
+            <ul class="tech__card-points">
+              <li>체험과 진로의 연결</li>
+              <li>성장 데이터 축적 가능성</li>
+              <li>교육 이후 단계 설계</li>
+              <li>학습자 중심 확장</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- 자동 보고서 -->
-      <div class="tech__card reveal">
-        <div class="tech__card-icon">&#x1F4CB;</div>
-        <h3 class="tech__card-title">Automated Reporting Solution</h3>
-        <p class="tech__card-body">
-          교육 운영 이후 필요한 결과 정리, 체험 보고, 운영 기록 업무를
-          보다 빠르고 체계적으로 수행할 수 있도록
-          자동 보고서 솔루션을 개발·적용하고 있습니다.
-        </p>
-        <ul class="tech__card-points">
-          <li>체험보고서 자동화</li>
-          <li>운영결과 정리 효율화</li>
-          <li>반복 업무 경감</li>
-          <li>데이터 기반 결과 관리</li>
-        </ul>
-      </div>
-
-      <!-- 커리어맵 -->
-      <div class="tech__card reveal">
-        <div class="tech__card-icon">&#x1F4C8;</div>
-        <h3 class="tech__card-title">Career Map Solution</h3>
-        <p class="tech__card-body">
-          아자스쿨은 체험 제공에 머무르지 않고
-          학습자와 참가자의 성장 흐름까지 연결하는 커리어맵 구조를 확장하고 있습니다.
-          체험이 하나의 이벤트로 끝나는 것이 아니라
-          진로 탐색과 자기 이해, 다음 학습 설계로 이어질 수 있도록 합니다.
-        </p>
-        <ul class="tech__card-points">
-          <li>체험과 진로의 연결</li>
-          <li>성장 데이터 축적 가능성</li>
-          <li>교육 이후 단계 설계</li>
-          <li>학습자 중심 확장</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+    <!-- ============================================================
      PARTNERS
      ============================================================ -->
-<section id="partners" class="partners">
-  <div class="container">
-    <div class="partners__header reveal">
-      <p class="section-label">Partners</p>
-      <h2 class="section-title">Trusted by Partners, Built for Growth</h2>
-      <p class="section-lead section-lead--center">
-        아자스쿨의 성장은 좋은 파트너와 함께 만들어졌습니다.<br>
-        투자사, 액셀러레이팅 프로그램, 주요 고객사와 파트너,<br>
-        인증과 자격, 기술적 자산은<br>
-        아자스쿨의 신뢰와 가능성을 함께 증명합니다.
-      </p>
-    </div>
+    <section id="partners" class="partners">
+      <div class="container">
+        <div class="partners__header reveal">
+          <p class="section-label">Partners</p>
+          <h2 class="section-title">Trusted by Partners, Built for Growth</h2>
+          <p class="section-lead section-lead--center">
+            아자스쿨의 성장은 좋은 파트너와 함께 만들어졌습니다.<br />
+            투자사, 액셀러레이팅 프로그램, 주요 고객사와 파트너,<br />
+            인증과 자격, 기술적 자산은<br />
+            아자스쿨의 신뢰와 가능성을 함께 증명합니다.
+          </p>
+        </div>
 
-    <!-- 투자사 -->
-    <div class="partners__category reveal">
-      <p class="partners__cat-title">Investors</p>
-      <p class="partners__cat-desc">아자스쿨의 가능성과 방향성에 공감하며 회사의 성장을 함께해온 투자 파트너들입니다.</p>
-      <div class="partners__list">
-        <span class="partners__tag">롯데벤처스</span>
-        <span class="partners__tag">한국벤처투자</span>
-        <span class="partners__tag">후마니타스 투자조합</span>
-        <span class="partners__tag">이동국</span>
-        <span class="partners__tag">KB국민카드</span>
+        <!-- 투자사 -->
+        <div class="partners__category reveal">
+          <p class="partners__cat-title">Investors</p>
+          <p class="partners__cat-desc">
+            아자스쿨의 가능성과 방향성에 공감하며 회사의 성장을 함께해온 투자
+            파트너들입니다.
+          </p>
+          <div class="partners__list">
+            <span class="partners__tag">롯데벤처스</span>
+            <span class="partners__tag">한국벤처투자</span>
+            <span class="partners__tag">후마니타스 투자조합</span>
+            <span class="partners__tag">이동국</span>
+            <span class="partners__tag">KB국민카드</span>
+          </div>
+        </div>
+
+        <!-- 액셀러레이팅 -->
+        <div class="partners__category reveal">
+          <p class="partners__cat-title">Accelerating Programs</p>
+          <p class="partners__cat-desc">
+            아자스쿨은 다양한 액셀러레이팅 및 성장 프로그램에 참여하며
+            사업모델과 기술, 운영 구조를 지속적으로 고도화해왔습니다.
+          </p>
+          <div class="partners__list">
+            <span class="partners__tag">LOTTE LCAMP</span>
+            <span class="partners__tag">DCAMP</span>
+            <span class="partners__tag">IBK창공</span>
+            <span class="partners__tag">KB스타터즈</span>
+            <span class="partners__tag">신한SQUARE 글로벌</span>
+            <span class="partners__tag">DREAMPLUS</span>
+            <span class="partners__tag">ELAND</span>
+            <span class="partners__tag">SBA 딥테크</span>
+            <span class="partners__tag">G밸리혁신사업</span>
+          </div>
+        </div>
+
+        <!-- 주요 파트너 및 고객사 -->
+        <div class="partners__category reveal">
+          <p class="partners__cat-title">Partners &amp; Clients</p>
+          <p class="partners__cat-desc">
+            아자스쿨은 기업, 대학, 공공기관, 교육기관과의 협력을 통해 다양한
+            교육 프로젝트를 수행하며 장기적인 신뢰를 쌓아가고 있습니다.
+          </p>
+          <div class="partners__logos">
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/1. nh.jpg"
+                alt="NH"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/2. shinhan.jpg"
+                alt="신한"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/3. kyowon.jpg"
+                alt="교원그룹"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/4. lotte.jpg"
+                alt="롯데그룹"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/5. visang.jpg"
+                alt="비상교육"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/6. seouluniv.jpg"
+                alt="서울대학교"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/7. geumcheon.jpg"
+                alt="금천구"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/8. gwa.jpg"
+                alt="과학기술진흥원"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/9. incheon.jpg"
+                alt="인천"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/10. hiseoul.jpg"
+                alt="하이서울"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/11. seoulwoman.jpg"
+                alt="서울여성공예센터"
+              />
+            </div>
+            <div class="partners__logo">
+              <img
+                src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/12. dongnamuniv.jpg"
+                alt="동남대"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- 인증 및 자격 -->
+        <div class="partners__category reveal">
+          <p class="partners__cat-title">Certifications &amp; Qualifications</p>
+          <p class="partners__cat-desc">
+            아자스쿨은 사업 수행과 기술 확장을 위한 다양한 인증과 자격을
+            확보하며 보다 신뢰도 높은 운영 기반을 갖추고 있습니다.
+          </p>
+          <div class="partners__list">
+            <span class="partners__tag">기업부설연구소</span>
+            <span class="partners__tag">벤처기업인증</span>
+            <span class="partners__tag">하이서울기업인증</span>
+            <span class="partners__tag">서울시 CORE100기업 인증</span>
+            <span class="partners__tag">관광사업등록증(종합여행업)</span>
+            <span class="partners__tag">직접생산확인증명</span>
+            <span class="partners__tag">소프트웨어사업자</span>
+          </div>
+        </div>
+
+        <!-- 특허 -->
+        <div class="partners__category reveal">
+          <p class="partners__cat-title">Patents</p>
+          <p class="partners__cat-desc">
+            아자스쿨은 기술 기반 교육기업으로서 지적재산과 기술 자산을 축적하며
+            차별화된 경쟁력을 만들어가고 있습니다. 특허 및 기술 자산은
+            아자스쿨이 단순 운영사가 아닌 기술 중심 성장 기업임을 보여주는
+            중요한 근거입니다.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- 액셀러레이팅 -->
-    <div class="partners__category reveal">
-      <p class="partners__cat-title">Accelerating Programs</p>
-      <p class="partners__cat-desc">아자스쿨은 다양한 액셀러레이팅 및 성장 프로그램에 참여하며 사업모델과 기술, 운영 구조를 지속적으로 고도화해왔습니다.</p>
-      <div class="partners__list">
-        <span class="partners__tag">LOTTE LCAMP</span>
-        <span class="partners__tag">DCAMP</span>
-        <span class="partners__tag">IBK창공</span>
-        <span class="partners__tag">KB스타터즈</span>
-        <span class="partners__tag">신한SQUARE 글로벌</span>
-        <span class="partners__tag">DREAMPLUS</span>
-        <span class="partners__tag">ELAND</span>
-        <span class="partners__tag">SBA 딥테크</span>
-        <span class="partners__tag">G밸리혁신사업</span>
-      </div>
-    </div>
-
-    <!-- 주요 파트너 및 고객사 -->
-    <div class="partners__category reveal">
-      <p class="partners__cat-title">Partners &amp; Clients</p>
-      <p class="partners__cat-desc">아자스쿨은 기업, 대학, 공공기관, 교육기관과의 협력을 통해 다양한 교육 프로젝트를 수행하며 장기적인 신뢰를 쌓아가고 있습니다.</p>
-      <div class="partners__logos">
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/1. nh.jpg" alt="NH"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/2. shinhan.jpg" alt="신한"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/3. kyowon.jpg" alt="교원그룹"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/4. lotte.jpg" alt="롯데그룹"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/5. visang.jpg" alt="비상교육"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/6. seouluniv.jpg" alt="서울대학교"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/7. geumcheon.jpg" alt="금천구"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/8. gwa.jpg" alt="과학기술진흥원"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/9. incheon.jpg" alt="인천"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/10. hiseoul.jpg" alt="하이서울"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/11. seoulwoman.jpg" alt="서울여성공예센터"></div>
-        <div class="partners__logo"><img src="../ajaschool-rebuild-frontend/public/b2b_landing/img/client/12. dongnamuniv.jpg" alt="동남대"></div>
-      </div>
-    </div>
-
-    <!-- 인증 및 자격 -->
-    <div class="partners__category reveal">
-      <p class="partners__cat-title">Certifications &amp; Qualifications</p>
-      <p class="partners__cat-desc">아자스쿨은 사업 수행과 기술 확장을 위한 다양한 인증과 자격을 확보하며 보다 신뢰도 높은 운영 기반을 갖추고 있습니다.</p>
-      <div class="partners__list">
-        <span class="partners__tag">기업부설연구소</span>
-        <span class="partners__tag">벤처기업인증</span>
-        <span class="partners__tag">하이서울기업인증</span>
-        <span class="partners__tag">서울시 CORE100기업 인증</span>
-        <span class="partners__tag">관광사업등록증(종합여행업)</span>
-        <span class="partners__tag">직접생산확인증명</span>
-        <span class="partners__tag">소프트웨어사업자</span>
-      </div>
-    </div>
-
-    <!-- 특허 -->
-    <div class="partners__category reveal">
-      <p class="partners__cat-title">Patents</p>
-      <p class="partners__cat-desc">
-        아자스쿨은 기술 기반 교육기업으로서
-        지적재산과 기술 자산을 축적하며 차별화된 경쟁력을 만들어가고 있습니다.
-        특허 및 기술 자산은 아자스쿨이 단순 운영사가 아닌
-        기술 중심 성장 기업임을 보여주는 중요한 근거입니다.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+    <!-- ============================================================
      NEWS
      ============================================================ -->
-<section id="news" class="news">
-  <div class="container">
-    <div class="news__header reveal">
-      <p class="section-label">News</p>
-      <h2 class="section-title">What's New at AJASCHOOL</h2>
-      <p class="section-lead section-lead--center">
-        사업 소식, 신규 협업, 보도자료, 뉴스레터를 통해<br>
-        아자스쿨의 현재와 다음 방향을 확인할 수 있습니다.
-      </p>
-    </div>
+    <section id="news" class="news">
+      <div class="container">
+        <div class="news__header reveal">
+          <p class="section-label">News</p>
+          <h2 class="section-title">What's New at AJASCHOOL</h2>
+          <p class="section-lead section-lead--center">
+            사업 소식, 신규 협업, 보도자료, 뉴스레터를 통해<br />
+            아자스쿨의 현재와 다음 방향을 확인할 수 있습니다.
+          </p>
+        </div>
 
-    <div class="news__grid reveal">
-      <div class="news__card">
-        <span class="news__card-badge">공지사항</span>
-        <h3 class="news__card-title">공지사항</h3>
-        <p class="news__card-desc">아자스쿨의 주요 공지와 서비스 업데이트를 안내합니다.</p>
+        <div class="news__grid reveal">
+          <div class="news__card">
+            <span class="news__card-badge">공지사항</span>
+            <h3 class="news__card-title">공지사항</h3>
+            <p class="news__card-desc">
+              아자스쿨의 주요 공지와 서비스 업데이트를 안내합니다.
+            </p>
+          </div>
+          <div class="news__card">
+            <span class="news__card-badge">보도자료</span>
+            <h3 class="news__card-title">보도자료</h3>
+            <p class="news__card-desc">
+              사업 확장, 제휴, 프로젝트 성과 등 대외적으로 의미 있는 소식을
+              전합니다.
+            </p>
+          </div>
+          <div class="news__card">
+            <span class="news__card-badge">뉴스레터</span>
+            <h3 class="news__card-title">뉴스레터</h3>
+            <p class="news__card-desc">
+              교육 시장의 변화와 아자스쿨의 주요 활동, 인사이트를 정리해
+              전달합니다.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="news__card">
-        <span class="news__card-badge">보도자료</span>
-        <h3 class="news__card-title">보도자료</h3>
-        <p class="news__card-desc">사업 확장, 제휴, 프로젝트 성과 등 대외적으로 의미 있는 소식을 전합니다.</p>
-      </div>
-      <div class="news__card">
-        <span class="news__card-badge">뉴스레터</span>
-        <h3 class="news__card-title">뉴스레터</h3>
-        <p class="news__card-desc">교육 시장의 변화와 아자스쿨의 주요 활동, 인사이트를 정리해 전달합니다.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ============================================================
+    <!-- ============================================================
      RECRUIT
      ============================================================ -->
-<section id="recruit" class="recruit">
-  <div class="container">
-    <div class="recruit__inner reveal">
-      <p class="section-label">Recruit</p>
-      <h2 class="section-title">Join AJASCHOOL</h2>
-      <p class="section-lead section-lead--center">
-        아자스쿨은 기술과 사람을 연결하며<br>
-        교육의 새로운 가능성을 함께 만들어갈 인재를 찾고 있습니다.<br>
-        수시 채용을 통해 기획, 운영, 콘텐츠, AI·기술, 글로벌 사업 등<br>
-        다양한 영역의 동료를 기다립니다.
-      </p>
-      <p class="recruit__body">
-        교육을 더 나은 방식으로 실행하고 싶은 사람,<br>
-        기술과 운영을 함께 이해하며 새로운 시장을 만들어가고 싶은 사람,<br>
-        지역과 글로벌을 연결하는 교육 사업에 도전하고 싶은 사람이라면<br>
-        아자스쿨에서 함께 성장할 수 있습니다.
-      </p>
-      <div class="recruit__ctas">
-        <a href="#contact" class="btn btn--primary">채용 정보 보기</a>
-        <a href="#contact" class="btn btn--outline">인재 등록하기</a>
+    <section id="recruit" class="recruit">
+      <div class="container">
+        <div class="recruit__inner reveal">
+          <p class="section-label">Recruit</p>
+          <h2 class="section-title">Join AJASCHOOL</h2>
+          <p class="section-lead section-lead--center">
+            아자스쿨은 기술과 사람을 연결하며<br />
+            교육의 새로운 가능성을 함께 만들어갈 인재를 찾고 있습니다.<br />
+            수시 채용을 통해 기획, 운영, 콘텐츠, AI·기술, 글로벌 사업 등<br />
+            다양한 영역의 동료를 기다립니다.
+          </p>
+          <p class="recruit__body">
+            교육을 더 나은 방식으로 실행하고 싶은 사람,<br />
+            기술과 운영을 함께 이해하며 새로운 시장을 만들어가고 싶은 사람,<br />
+            지역과 글로벌을 연결하는 교육 사업에 도전하고 싶은 사람이라면<br />
+            아자스쿨에서 함께 성장할 수 있습니다.
+          </p>
+          <div class="recruit__ctas">
+            <a href="#contact" class="btn btn--primary">채용 정보 보기</a>
+            <a href="#contact" class="btn btn--outline">인재 등록하기</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ============================================================
+    <!-- ============================================================
      CONTACT
      ============================================================ -->
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="contact__header reveal">
-      <p class="section-label">Contact</p>
-      <h2 class="section-title">아자스쿨과 함께할 기회를 이야기해보세요</h2>
-      <p class="section-lead section-lead--center">
-        기업, 학교, 대학, 공공기관, 글로벌 파트너 등<br>
-        각 고객의 목적에 맞는 방식으로 문의를 남기실 수 있습니다.
-      </p>
-    </div>
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact__header reveal">
+          <p class="section-label">Contact</p>
+          <h2 class="section-title">아자스쿨과 함께할 기회를 이야기해보세요</h2>
+          <p class="section-lead section-lead--center">
+            기업, 학교, 대학, 공공기관, 글로벌 파트너 등<br />
+            각 고객의 목적에 맞는 방식으로 문의를 남기실 수 있습니다.
+          </p>
+        </div>
 
-    <p class="contact__prompt reveal">어떤 협업을 찾고 계신가요?</p>
+        <p class="contact__prompt reveal">어떤 협업을 찾고 계신가요?</p>
 
-    <div class="contact__types reveal">
-      <div class="contact__type">기업 프로그램 문의</div>
-      <div class="contact__type">학교·단체 프로그램 문의</div>
-      <div class="contact__type">대학 협력 문의</div>
-      <div class="contact__type">공공사업 / 지자체 문의</div>
-      <div class="contact__type">글로벌 협력 문의</div>
-      <div class="contact__type">제휴 / 기타 문의</div>
-    </div>
+        <div class="contact__types reveal">
+          <div class="contact__type">기업 프로그램 문의</div>
+          <div class="contact__type">학교·단체 프로그램 문의</div>
+          <div class="contact__type">대학 협력 문의</div>
+          <div class="contact__type">공공사업 / 지자체 문의</div>
+          <div class="contact__type">글로벌 협력 문의</div>
+          <div class="contact__type">제휴 / 기타 문의</div>
+        </div>
 
-    <p class="contact__note reveal">
-      문의 목적과 필요 내용을 남겨주시면<br>
-      아자스쿨 담당자가 가장 적합한 방식으로 검토 후 연락드립니다.
-    </p>
+        <p class="contact__note reveal">
+          문의 목적과 필요 내용을 남겨주시면<br />
+          아자스쿨 담당자가 가장 적합한 방식으로 검토 후 연락드립니다.
+        </p>
 
-    <div class="contact__ctas reveal">
-      <a href="mailto:contact@ajaschool.com" class="btn btn--primary">문의하기</a>
-      <a href="mailto:contact@ajaschool.com" class="btn btn--outline">제휴 제안하기</a>
-      <a href="mailto:contact@ajaschool.com" class="btn btn--outline">소개서 요청하기</a>
-    </div>
-  </div>
-</section>
+        <div class="contact__ctas reveal">
+          <a href="mailto:contact@ajaschool.com" class="btn btn--primary"
+            >문의하기</a
+          >
+          <a href="mailto:contact@ajaschool.com" class="btn btn--outline"
+            >제휴 제안하기</a
+          >
+          <a href="mailto:contact@ajaschool.com" class="btn btn--outline"
+            >소개서 요청하기</a
+          >
+        </div>
+      </div>
+    </section>
 
-<!-- ============================================================
+    <!-- ============================================================
      FINAL CTA
      ============================================================ -->
-<section id="finalcta" class="finalcta">
-  <div class="container">
-    <div class="reveal">
-      <h2 class="section-title">
-        플랫폼부터 운영, 기술, 글로벌 협력까지.<br>
-        아자스쿨과 함께 다음 교육 프로젝트를 시작해보세요
-      </h2>
-      <p class="finalcta__body">
-        아자스쿨은 체험학습 플랫폼을 넘어<br>
-        교육의 선택, 운영, 기술, 확장을 연결하는 AI EduTech 기업입니다.<br>
-        당신의 목적에 맞는 교육 프로그램과 협업 모델을 제안합니다.
-      </p>
-      <div class="finalcta__ctas">
-        <a href="#contact" class="btn btn--accent">사업 문의하기</a>
-        <a href="#contact" class="btn btn--outline-white">글로벌 협력 제안하기</a>
-        <a href="https://www.ajaschool.com" target="_blank" rel="noopener" class="btn btn--outline-white">PLATFORM 방문하기</a>
+    <section id="finalcta" class="finalcta">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">
+            플랫폼부터 운영, 기술, 글로벌 협력까지.<br />
+            아자스쿨과 함께 다음 교육 프로젝트를 시작해보세요
+          </h2>
+          <p class="finalcta__body">
+            아자스쿨은 체험학습 플랫폼을 넘어<br />
+            교육의 선택, 운영, 기술, 확장을 연결하는 AI EduTech 기업입니다.<br />
+            당신의 목적에 맞는 교육 프로그램과 협업 모델을 제안합니다.
+          </p>
+          <div class="finalcta__ctas">
+            <a href="#contact" class="btn btn--accent">사업 문의하기</a>
+            <a href="#contact" class="btn btn--outline-white"
+              >글로벌 협력 제안하기</a
+            >
+            <a
+              href="https://www.ajaschool.com"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline-white"
+              >PLATFORM 방문하기</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ============================================================
+    <!-- ============================================================
      FOOTER
      ============================================================ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__top">
-      <div>
-        <p class="footer__brand-name">AJASCHOOL</p>
-        <p class="footer__brand-desc">
-          체험학습 플랫폼 기반 AI EduTech 기업<br>
-          기술과 사람을 연결해<br>
-          교육의 선택은 더 쉽게, 실행은 더 정교하게.
-        </p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div>
+            <p class="footer__brand-name">AJASCHOOL</p>
+            <p class="footer__brand-desc">
+              체험학습 플랫폼 기반 AI EduTech 기업<br />
+              기술과 사람을 연결해<br />
+              교육의 선택은 더 쉽게, 실행은 더 정교하게.
+            </p>
+          </div>
+          <nav class="footer__nav">
+            <a href="#about">ABOUT</a>
+            <a href="#business">BUSINESS</a>
+            <a href="#tech">TECH &amp; AI</a>
+            <a href="#impact">IMPACT</a>
+            <a href="#partners">PARTNERS</a>
+            <a href="#news">NEWS</a>
+            <a href="#contact">CONTACT</a>
+            <a href="https://www.ajaschool.com" target="_blank" rel="noopener"
+              >PLATFORM</a
+            >
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          &copy; 2024 AJASCHOOL. All rights reserved.<br />
+          회사 정보 / 주소 / 사업자등록번호 / 대표 연락처 / 이메일 /
+          개인정보처리방침 / 이용약관
+        </div>
       </div>
-      <nav class="footer__nav">
-        <a href="#about">ABOUT</a>
-        <a href="#business">BUSINESS</a>
-        <a href="#tech">TECH &amp; AI</a>
-        <a href="#impact">IMPACT</a>
-        <a href="#partners">PARTNERS</a>
-        <a href="#news">NEWS</a>
-        <a href="#contact">CONTACT</a>
-        <a href="https://www.ajaschool.com" target="_blank" rel="noopener">PLATFORM</a>
-      </nav>
-    </div>
-    <div class="footer__bottom">
-      &copy; 2024 AJASCHOOL. All rights reserved.<br>
-      회사 정보 / 주소 / 사업자등록번호 / 대표 연락처 / 이메일 / 개인정보처리방침 / 이용약관
-    </div>
-  </div>
-</footer>
+    </footer>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
