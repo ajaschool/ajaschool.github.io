@@ -103,6 +103,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ----------------------------------------------------------
+     NEWS: scroll-driven category activation
+     ---------------------------------------------------------- */
+  const newsCategories = document.querySelectorAll('.news__category');
+
+  if (newsCategories.length) {
+    const newsObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle('news__category--active', entry.isIntersecting);
+        });
+      },
+      { threshold: 0.3, rootMargin: '0px 0px -10% 0px' }
+    );
+
+    newsCategories.forEach(cat => newsObserver.observe(cat));
+  }
+
+  /* ----------------------------------------------------------
      Animated counters
      ---------------------------------------------------------- */
   const counters = document.querySelectorAll('[data-count]');

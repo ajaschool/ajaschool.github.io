@@ -31,7 +31,11 @@
     <header class="gnb">
       <div class="gnb__inner">
         <a href="#hero" class="gnb__logo">
-          <img src="img/logo-white.png" alt="AJASCHOOL" class="gnb__logo-white" />
+          <img
+            src="img/logo-white.png"
+            alt="AJASCHOOL"
+            class="gnb__logo-white"
+          />
           <img src="img/logo.png" alt="AJASCHOOL" class="gnb__logo-color" />
         </a>
 
@@ -762,6 +766,46 @@
             아자스쿨이 단순 운영사가 아닌 기술 중심 성장 기업임을 보여주는
             중요한 근거입니다.
           </p>
+          <div class="partners__patents">
+            <article class="partners__patent">
+              <div class="partners__patent-image">
+                <img
+                  src="img/license/license_1.png"
+                  alt="콘텐츠 추천을 위한 장치 및 그 방법 특허증"
+                  loading="lazy"
+                />
+              </div>
+              <p class="partners__patent-title">
+                콘텐츠 추천을 위한 장치 및 그 방법
+              </p>
+            </article>
+
+            <article class="partners__patent">
+              <div class="partners__patent-image">
+                <img
+                  src="img/license/license_2.png"
+                  alt="아이디어 제안자 역량 진단 시스템 및 방법 특허증"
+                  loading="lazy"
+                />
+              </div>
+              <p class="partners__patent-title">
+                아이디어 제안자 역량 진단 시스템 및 방법
+              </p>
+            </article>
+
+            <article class="partners__patent">
+              <div class="partners__patent-image">
+                <img
+                  src="img/license/license_3.png"
+                  alt="사업장 단체별 사업 관리 방법 및 그 시스템 특허증"
+                  loading="lazy"
+                />
+              </div>
+              <p class="partners__patent-title">
+                사업장 단체별 사업 관리 방법 및 그 시스템
+              </p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -780,29 +824,141 @@
           </p>
         </div>
 
-        <div class="news__grid reveal">
-          <div class="news__card">
-            <span class="news__card-badge">공지사항</span>
-            <h3 class="news__card-title">공지사항</h3>
-            <p class="news__card-desc">
-              아자스쿨의 주요 공지와 서비스 업데이트를 안내합니다.
-            </p>
+        <div class="news__categories">
+          <!-- 공지사항 -->
+          <div class="news__category" data-category="notice">
+            <div class="news__category-inner">
+              <div class="news__category-info">
+                <span class="news__card-badge">공지사항</span>
+                <h3 class="news__card-title">공지사항</h3>
+                <p class="news__card-desc">
+                  아자스쿨의 주요 공지와 서비스 업데이트를 안내합니다.
+                </p>
+              </div>
+              <a href="https://www.ajaschool.com/shop/notice" class="news__category-link" target="_blank" rel="noopener">
+                공지사항 바로가기 →
+              </a>
+            </div>
           </div>
-          <div class="news__card">
-            <span class="news__card-badge">보도자료</span>
-            <h3 class="news__card-title">보도자료</h3>
-            <p class="news__card-desc">
-              사업 확장, 제휴, 프로젝트 성과 등 대외적으로 의미 있는 소식을
-              전합니다.
-            </p>
+
+          <!-- 보도자료 -->
+          <div class="news__category" data-category="press">
+            <div class="news__category-inner">
+              <div class="news__category-info">
+                <span class="news__card-badge">보도자료</span>
+                <h3 class="news__card-title">보도자료</h3>
+                <p class="news__card-desc">
+                  사업 확장, 제휴, 프로젝트 성과 등 대외적으로 의미 있는 소식을 전합니다.
+                </p>
+              </div>
+              <div class="news__articles news__articles--from-right">
+                <a href="https://platum.kr/archives/249155" class="news__article" target="_blank" rel="noopener">
+                  <div class="news__article-thumb">
+                    <img src="https://cdn.platum.kr/wp-content/uploads/2025/01/aja.png" alt="아자스쿨, 네이버와 손잡고 체험학습 시장 혁신 나서" loading="lazy" onerror="this.parentElement.classList.add('news__article-thumb--fallback')" />
+                  </div>
+                  <div class="news__article-body">
+                    <span class="news__article-meta">Platum · 2025.01.02</span>
+                    <h4 class="news__article-title">아자스쿨, 네이버와 손잡고 체험학습 시장 혁신 나서</h4>
+                    <p class="news__article-summary">네이버 검색 연동과 필터 기능 확장으로 체험학습 탐색과 신청 경험을 한층 쉽게 만든 소식입니다.</p>
+                  </div>
+                </a>
+                <a href="https://www.startupn.kr/news/articleView.html?idxno=54793" class="news__article" target="_blank" rel="noopener">
+                  <div class="news__article-thumb">
+                    <img src="https://www.startupn.kr/news/photo/202511/54793_56442_259.jpg" alt="아자스쿨, 베트남 4대 대학과 손잡고 '한-베 국제교육 허브' 만든다" loading="lazy" onerror="this.parentElement.classList.add('news__article-thumb--fallback')" />
+                  </div>
+                  <div class="news__article-body">
+                    <span class="news__article-meta">StartupN · 2025.11.05</span>
+                    <h4 class="news__article-title">아자스쿨, 베트남 4대 대학과 손잡고 '한-베 국제교육 허브' 만든다</h4>
+                    <p class="news__article-summary">베트남 4대 대학과 학점 교류, 인턴십, 사이버대학 연계를 포함한 양방향 국제교육 모델을 추진하는 확장 소식입니다.</p>
+                  </div>
+                </a>
+                <a href="https://www.unicornfactory.co.kr/article/2026011316203370682" class="news__article" target="_blank" rel="noopener">
+                  <div class="news__article-thumb">
+                    <img src="https://thumb.mt.co.kr/21/2026/01/2026011316203370682_1.jpg?1768348811" alt="AI와 영어·금융교육 융합…아자스쿨, 이집트 등 해외기업과 맞손" loading="lazy" onerror="this.parentElement.classList.add('news__article-thumb--fallback')" />
+                  </div>
+                  <div class="news__article-body">
+                    <span class="news__article-meta">유니콘팩토리 · 2026.01.14</span>
+                    <h4 class="news__article-title">AI와 영어·금융교육 융합…아자스쿨, 이집트 등 해외기업과 맞손</h4>
+                    <p class="news__article-summary">이집트·싱가포르 파트너와 협력해 AI, 로보틱스, 금융투자, 영어 기반 글로벌 교육 프로그램 확장을 구체화한 기사입니다.</p>
+                  </div>
+                </a>
+                <a href="https://www.newsprime.co.kr/news/article/?no=720816" class="news__article" target="_blank" rel="noopener">
+                  <div class="news__article-thumb">
+                    <img src="https://www.newsprime.co.kr/data/photos/cdn/20260104/art_720816_1768867637.png" alt="아자스쿨, 글로벌 에듀테크 MOU" loading="lazy" onerror="this.parentElement.classList.add('news__article-thumb--fallback')" />
+                  </div>
+                  <div class="news__article-body">
+                    <span class="news__article-meta">프라임경제 · 2026.01.20</span>
+                    <h4 class="news__article-title">아자스쿨, 글로벌 에듀테크 MOU "AI·금융 교육 시장 정조준"</h4>
+                    <p class="news__article-summary">글로벌 파트너십을 기반으로 HRD와 청소년·대학생 대상 융합형 AI·금융 교육 시장 공략을 본격화한 내용입니다.</p>
+                  </div>
+                </a>
+                <a href="https://www.kns.tv/news/articleView.html?idxno=925334" class="news__article" target="_blank" rel="noopener">
+                  <div class="news__article-thumb">
+                    <img src="https://www.kns.tv/news/photo/202411/925334_817138_2243.jpg" alt="아자스쿨, VINA MEDIA와 글로벌 협력 MOU 체결" loading="lazy" onerror="this.parentElement.classList.add('news__article-thumb--fallback')" />
+                  </div>
+                  <div class="news__article-body">
+                    <span class="news__article-meta">KNS뉴스통신 · 2024.11.27</span>
+                    <h4 class="news__article-title">아자스쿨, VINA MEDIA와 글로벌 협력 MOU 체결</h4>
+                    <p class="news__article-summary">VINA MEDIA와의 협약을 통해 한류, 교육, 관광을 잇는 한-베 글로벌 협력 모델과 신규 비즈니스 기회를 확대하는 내용입니다.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="news__card">
-            <span class="news__card-badge">뉴스레터</span>
-            <h3 class="news__card-title">뉴스레터</h3>
-            <p class="news__card-desc">
-              교육 시장의 변화와 아자스쿨의 주요 활동, 인사이트를 정리해
-              전달합니다.
-            </p>
+
+          <!-- 뉴스레터 -->
+          <div class="news__category" data-category="newsletter">
+            <div class="news__category-inner">
+              <div class="news__category-info">
+                <span class="news__card-badge">뉴스레터</span>
+                <h3 class="news__card-title">뉴스레터</h3>
+                <p class="news__card-desc">
+                  교육 시장의 변화와 아자스쿨의 주요 활동, 인사이트를 정리해 전달합니다.
+                </p>
+              </div>
+              <div class="news__articles news__articles--from-left">
+                <a href="https://www.mhns.co.kr/news/articleView.html?idxno=702704" class="news__article" target="_blank" rel="noopener">
+                  <div class="news__article-thumb">
+                    <img src="https://cdn.mhns.co.kr/news/photo/202410/702704_804913_5035.png" alt="아자스쿨, 한국명상교육진흥원과 협력하여 명상 프로그램 체험 운영" loading="lazy" onerror="this.parentElement.classList.add('news__article-thumb--fallback')" />
+                  </div>
+                  <div class="news__article-body">
+                    <span class="news__article-meta">MHNS · 2024.10.31</span>
+                    <h4 class="news__article-title">아자스쿨, 한국명상교육진흥원과 협력하여 명상 프로그램 체험 운영</h4>
+                    <p class="news__article-summary">부모와 어린이, 청소년을 위한 명상 체험 프로그램을 통해 심리적 안정과 정서 회복을 돕는 신규 체험 콘텐츠를 소개한 기사입니다.</p>
+                  </div>
+                </a>
+                <a href="https://www.etnews.com/20230621000044" class="news__article" target="_blank" rel="noopener">
+                  <div class="news__article-thumb">
+                    <img src="https://img.etnews.com/news/article/2023/06/21/news-p.v1.20230621.6dfba62df430436b978e9e684fd96b6e_P1.jpg" alt="아자스쿨, 서울대 '현장형 창업캠프, 테헤란GO!' 성료" loading="lazy" onerror="this.parentElement.classList.add('news__article-thumb--fallback')" />
+                  </div>
+                  <div class="news__article-body">
+                    <span class="news__article-meta">전자신문 · 2023.06.21</span>
+                    <h4 class="news__article-title">아자스쿨, 서울대 '현장형 창업캠프, 테헤란GO!' 성료</h4>
+                    <p class="news__article-summary">서울대 대학원생 대상 현장형 창업캠프를 통해 VC와 스타트업 실무 네트워킹을 연결한 프로그램 운영 사례입니다.</p>
+                  </div>
+                </a>
+                <a href="https://www.mt.co.kr/industry/2022/12/01/2022120116221069583" class="news__article" target="_blank" rel="noopener">
+                  <div class="news__article-thumb">
+                    <img src="https://thumb.mt.co.kr/cdn-cgi/image/w=1200,h=900,fit=cover,bg=whilte,f=auto,quality=high,sharpen=2,g=face/21/2022/12/2022120116221069583_1.jpg" alt="아자스쿨, 2022년 공공구매촉진대회 중기부 장관표창 수상" loading="lazy" onerror="this.parentElement.classList.add('news__article-thumb--fallback')" />
+                  </div>
+                  <div class="news__article-body">
+                    <span class="news__article-meta">머니투데이 · 2022.12.01</span>
+                    <h4 class="news__article-title">아자스쿨, 2022년 공공구매촉진대회 중기부 장관표창 수상</h4>
+                    <p class="news__article-summary">체험 콘텐츠 품질 향상과 일자리 창출 성과를 인정받아 중기부 장관표창을 수상한 성장 이력을 담은 기사입니다.</p>
+                  </div>
+                </a>
+                <a href="https://news.unn.net/news/articleView.html?idxno=234856" class="news__article" target="_blank" rel="noopener">
+                  <div class="news__article-thumb">
+                    <img src="https://cdn.news.unn.net/news/photo/202009/234856_120248_495.jpg" alt="삼육보건대 아동보육학과, 아자스쿨주식회사와 업무협약 체결" loading="lazy" onerror="this.parentElement.classList.add('news__article-thumb--fallback')" />
+                  </div>
+                  <div class="news__article-body">
+                    <span class="news__article-meta">한국대학신문 · 2020.09.17</span>
+                    <h4 class="news__article-title">삼육보건대 아동보육학과, 아자스쿨주식회사와 업무협약 체결</h4>
+                    <p class="news__article-summary">대학과의 협력을 통해 영유아 교육기관 연계 및 졸업생 진로 확장 가능성을 넓힌 협약 소식입니다.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -870,7 +1026,11 @@
           <a href="mailto:help@ajaschool.co.kr" class="btn btn--primary"
             >문의하기</a
           >
-          <a href="https://www.ajaschool.com/ajapartner" target="_blank" rel="noopener" class="btn btn--outline"
+          <a
+            href="https://www.ajaschool.com/ajapartner"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--outline"
             >제휴 제안하기</a
           >
           <a href="mailto:help@ajaschool.co.kr" class="btn btn--outline"
@@ -941,10 +1101,17 @@
         </div>
         <div class="footer__bottom">
           <p>(주) 아자스쿨 | 대표이사 : 황선하</p>
-          <p>사업자등록번호 : 548-87-00240 | 통신판매업신고 : 2021-서울마포-1541</p>
-          <p>주소 : 서울특별시 금천구 디지털로10길 9, 5층 킥스업 2호 (가산동, 현대시티아울렛 가산점)</p>
-          <p>이메일 : help@ajaschool.co.kr | 문의 가능시간 : [평일] 11:00 ~ 18:30 (점심시간 12:00 ~ 14:00)</p>
-          <p style="margin-top:12px;">&copy; 2025 AJASCHOOL. All rights reserved.</p>
+          <p>
+            사업자등록번호 : 548-87-00240 | 통신판매업신고 : 2021-서울마포-1541
+          </p>
+          <p>
+            주소 : 서울특별시 금천구 디지털로10길 9, 5층 킥스업 2호 (가산동,
+            현대시티아울렛 가산점)
+          </p>
+          <p>이메일 : help@ajaschool.co.kr</p>
+          <p style="margin-top: 12px">
+            &copy; 2025 AJASCHOOL. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
