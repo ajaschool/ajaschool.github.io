@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const gnb = document.querySelector('.gnb');
   const gnbLinks = document.querySelectorAll('.gnb__link');
   const sections = document.querySelectorAll('section[id]');
+  const newsCategories = document.querySelectorAll('.news__category');
 
   function onScroll() {
     // Background toggle
@@ -33,9 +34,42 @@ document.addEventListener('DOMContentLoaded', () => {
         link.classList.add('gnb__link--active');
       }
     });
+
+    updateNewsCategoryState();
+  }
+
+  function updateNewsCategoryState() {
+    if (!newsCategories.length) return;
+
+    const viewportAnchor = window.innerHeight * 0.42;
+    let activeCategory = null;
+    let closestCategory = null;
+    let closestDistance = Infinity;
+
+    newsCategories.forEach(category => {
+      const rect = category.getBoundingClientRect();
+      const containsAnchor = rect.top <= viewportAnchor && rect.bottom >= viewportAnchor;
+      const distanceToCenter = Math.abs(rect.top + rect.height / 2 - viewportAnchor);
+
+      if (distanceToCenter < closestDistance) {
+        closestDistance = distanceToCenter;
+        closestCategory = category;
+      }
+
+      if (containsAnchor) {
+        activeCategory = category;
+      }
+    });
+
+    const targetCategory = activeCategory || closestCategory;
+
+    newsCategories.forEach(category => {
+      category.classList.toggle('news__category--active', category === targetCategory);
+    });
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', updateNewsCategoryState);
   onScroll();
 
   /* ----------------------------------------------------------
@@ -100,24 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     // Fallback: show everything
     revealEls.forEach(el => el.classList.add('revealed'));
-  }
-
-  /* ----------------------------------------------------------
-     NEWS: scroll-driven category activation
-     ---------------------------------------------------------- */
-  const newsCategories = document.querySelectorAll('.news__category');
-
-  if (newsCategories.length) {
-    const newsObserver = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          entry.target.classList.toggle('news__category--active', entry.isIntersecting);
-        });
-      },
-      { threshold: 0.3, rootMargin: '0px 0px -10% 0px' }
-    );
-
-    newsCategories.forEach(cat => newsObserver.observe(cat));
   }
 
   /* ----------------------------------------------------------
