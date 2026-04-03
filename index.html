@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <!-- ============================================================
      GNB
      ============================================================ -->
@@ -159,34 +161,37 @@
         </div>
 
         <div class="glance__grid">
-          <div class="glance__card reveal">
+          <div class="glance__card reveal" data-delay="0">
             <p class="glance__card-num">01</p>
-            <h3 class="glance__card-title">PLATFORM</h3>
+            <h3 class="glance__card-title">PLATFORM (B2C)</h3>
             <p class="glance__card-desc">
-              체험학습 선택을 더 쉽고 넓게<br />
-              수요자에게는 더 많은 선택지를,<br />
-              공급자에게는 더 넓은 연결 기회를 제공합니다.
+              국내최대 체험학습 플랫폼<br />
+              “아자스쿨”을 통해 6,300,000학습자와<br />
+              120,000 공급자를 연결합니다.
             </p>
           </div>
-          <div class="glance__card reveal">
+          <div class="glance__card reveal" data-delay="0.1">
             <p class="glance__card-num">02</p>
-            <h3 class="glance__card-title">OPERATION</h3>
+            <h3 class="glance__card-title">OPERATION (B2B)</h3>
             <p class="glance__card-desc">
               기업·학교·기관 맞춤형 교육 실행<br />
-              목적에 맞는 프로그램을 기획하고<br />
-              현장까지 안정적으로 운영합니다.
+              학교, 기업, 기관 맞춤형<br />
+              캠프를 기획하고 실행합니다.
             </p>
           </div>
-          <div class="glance__card reveal">
+          <div class="glance__card reveal" data-delay="0.2">
             <p class="glance__card-num">03</p>
-            <h3 class="glance__card-title">TECHNOLOGY</h3>
+            <h3 class="glance__card-title">AI & EduTech</h3>
             <p class="glance__card-desc">
               AI 기반 추천과 운영 자동화<br />
               추천, 진단, 결과 정리까지<br />
               교육 운영의 비효율을 줄입니다.
             </p>
+
+            AI 기반 추천과 체험보고서 작성 진로검사→추천→진로 연계까지 교육의
+            미래를 열어갑니다.
           </div>
-          <div class="glance__card reveal">
+          <div class="glance__card reveal" data-delay="0.3">
             <p class="glance__card-num">04</p>
             <h3 class="glance__card-title">EXPANSION</h3>
             <p class="glance__card-desc">
@@ -221,7 +226,7 @@
             <p class="impact__metric-num" data-count="5350" data-suffix="+">
               0
             </p>
-            <p class="impact__metric-label">누적 등록 체험학습 수</p>
+            <p class="impact__metric-label">등록 체험 수(LIBRARY)</p>
           </div>
           <div class="impact__metric">
             <p class="impact__metric-num" data-count="350" data-suffix="+">0</p>
@@ -229,7 +234,7 @@
           </div>
           <div class="impact__metric">
             <p class="impact__metric-num" data-count="720" data-suffix="+">0</p>
-            <p class="impact__metric-label">직접 운영 프로그램 수</p>
+            <p class="impact__metric-label">자체 프로그램 운영 수(PB)</p>
           </div>
           <div class="impact__metric">
             <p class="impact__metric-num" data-count="340000" data-suffix="+">
@@ -248,8 +253,10 @@
         </div>
 
         <p class="impact__bottom-copy reveal">
-          숫자는 아자스쿨이 현장에서 쌓아온 신뢰의 기록이자,<br />
-          앞으로의 성장 가능성을 보여주는 가장 현실적인 언어입니다.
+          아자스쿨은 국내 우수 교육 기관들과 함께 글로벌 시장으로 나가고
+          있으며,<br />
+          국내 방문객, 해외 청소년 및 기관에게 대한민국 교육의 우수성을 알리고
+          있습니다.
         </p>
 
         <!-- 케이스 스터디 -->
@@ -260,6 +267,88 @@
             <div class="impact__case">학교·대학 연계 실습형 프로그램 기획</div>
             <div class="impact__case">공공기관 협력형 교육 프로젝트 수행</div>
             <div class="impact__case">글로벌 파트너십 기반 프로그램 운영</div>
+          </div>
+
+          <!-- 비주얼 케이스 카드 -->
+          <div class="impact__cases-visual">
+            <div class="impact__case-card reveal" data-delay="0">
+              <div class="impact__case-card-images">
+                <div class="impact__case-card-img">
+                  <img
+                    src="img/over_img/02_School_Programs_사진1.png"
+                    alt="School Programs 1"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="impact__case-card-img">
+                  <img
+                    src="img/over_img/03_School_Programs_사진2.png"
+                    alt="School Programs 2"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <p class="impact__case-card-title">School Programs(B2C)</p>
+            </div>
+            <div class="impact__case-card reveal" data-delay="0.12">
+              <div class="impact__case-card-images">
+                <div class="impact__case-card-img">
+                  <img
+                    src="img/over_img/04_Corporate_Family_Camps_사진1.png"
+                    alt="Corporate Camps 1"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="impact__case-card-img">
+                  <img
+                    src="img/over_img/05_Corporate_Family_Camps_사진2.png"
+                    alt="Corporate Camps 2"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <p class="impact__case-card-title">
+                Corporate & Family Camps(B2B)
+              </p>
+            </div>
+            <div class="impact__case-card reveal" data-delay="0.24">
+              <div class="impact__case-card-images">
+                <div class="impact__case-card-img">
+                  <img
+                    src="img/over_img/06_University_Programs_사진1.png"
+                    alt="University Programs 1"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="impact__case-card-img">
+                  <img
+                    src="img/over_img/07_University_Programs_사진2.png"
+                    alt="University Programs 2"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <p class="impact__case-card-title">University Programs</p>
+            </div>
+            <div class="impact__case-card reveal" data-delay="0.36">
+              <div class="impact__case-card-images">
+                <div class="impact__case-card-img">
+                  <img
+                    src="img/over_img/08_Consulting_MICE_사진1.png"
+                    alt="Consulting MICE 1"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="impact__case-card-img">
+                  <img
+                    src="img/over_img/09_Consulting_MICE_사진2.png"
+                    alt="Consulting MICE 2"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <p class="impact__case-card-title">Consulting & MICE</p>
+            </div>
           </div>
         </div>
       </div>
@@ -385,9 +474,9 @@
             <div class="history__era history__era--active" data-era="era1">
               <p class="history__year">2024</p>
               <p class="history__summary">
-                네이버 연동과 베트남 대학 협력으로 유통·글로벌 확장이 본격화됐고,
-                최근에는 AI·영어·금융교육 융합형 글로벌 에듀테크 기업으로
-                포지셔닝이 강화되고 있습니다.
+                네이버 연동과 베트남 대학 협력으로 유통·글로벌 확장이
+                본격화됐고, 최근에는 AI·영어·금융교육 융합형 글로벌 에듀테크
+                기업으로 포지셔닝이 강화되고 있습니다.
               </p>
               <div class="history__list">
                 <div class="history__item">
@@ -417,8 +506,8 @@
             <div class="history__era" data-era="era2">
               <p class="history__year">2020</p>
               <p class="history__summary">
-                청소년 체험활동 운영 경험 위에 AI·빅데이터 활용 서비스를 결합하며
-                플랫폼의 기술성과 실행력을 동시에 키운 시기입니다.
+                청소년 체험활동 운영 경험 위에 AI·빅데이터 활용 서비스를
+                결합하며 플랫폼의 기술성과 실행력을 동시에 키운 시기입니다.
               </p>
               <div class="history__list">
                 <div class="history__item">아자스쿨 공식 서비스 오픈</div>
@@ -502,7 +591,7 @@
 
         <div class="business__grid">
           <!-- 플랫폼(B2C) -->
-          <div class="business__card reveal">
+          <div class="business__card reveal" data-delay="0">
             <p class="business__card-label">B2C Platform</p>
             <h3 class="business__card-title">
               B2C Experiential Learning Platform
@@ -526,7 +615,7 @@
           </div>
 
           <!-- B2B 캠프 -->
-          <div class="business__card reveal">
+          <div class="business__card reveal" data-delay="0.12">
             <p class="business__card-label">B2B Camp</p>
             <h3 class="business__card-title">
               B2B Camp &amp; Program Solutions
@@ -548,7 +637,7 @@
           </div>
 
           <!-- 대학 / AI 교육 -->
-          <div class="business__card reveal">
+          <div class="business__card reveal" data-delay="0.24">
             <p class="business__card-label">University &amp; AI</p>
             <h3 class="business__card-title">University &amp; AI Education</h3>
             <p class="business__card-body">
@@ -568,7 +657,7 @@
           </div>
 
           <!-- 글로벌 사업 -->
-          <div class="business__card reveal">
+          <div class="business__card reveal" data-delay="0.36">
             <p class="business__card-label">Global</p>
             <h3 class="business__card-title">Global Education Business</h3>
             <p class="business__card-body">
@@ -611,7 +700,7 @@
 
         <div class="tech__grid">
           <!-- AI 추천 엔진 -->
-          <div class="tech__card reveal">
+          <div class="tech__card reveal" data-delay="0">
             <div class="tech__card-icon">&#x1F50D;</div>
             <h3 class="tech__card-title">AI Recommendation Engine</h3>
             <p class="tech__card-body">
@@ -628,7 +717,7 @@
           </div>
 
           <!-- 자동 보고서 -->
-          <div class="tech__card reveal">
+          <div class="tech__card reveal" data-delay="0.12">
             <div class="tech__card-icon">&#x1F4CB;</div>
             <h3 class="tech__card-title">Automated Reporting Solution</h3>
             <p class="tech__card-body">
@@ -645,7 +734,7 @@
           </div>
 
           <!-- 커리어맵 -->
-          <div class="tech__card reveal">
+          <div class="tech__card reveal" data-delay="0.24">
             <div class="tech__card-icon">&#x1F4C8;</div>
             <h3 class="tech__card-title">Career Map Solution</h3>
             <p class="tech__card-body">
@@ -815,8 +904,8 @@
               <div class="partners__evidence-head">
                 <h3 class="partners__evidence-title">인증 6건</h3>
                 <p class="partners__evidence-copy">
-                  SW 수행 자격, 직접생산, 벤처 확인, 관광사업 등록, 연구소 보유까지
-                  사업 실행에 필요한 기반을 갖추고 있습니다.
+                  SW 수행 자격, 직접생산, 벤처 확인, 관광사업 등록, 연구소
+                  보유까지 사업 실행에 필요한 기반을 갖추고 있습니다.
                 </p>
               </div>
               <div class="partners__credential-grid">
@@ -919,7 +1008,9 @@
               </div>
             </section>
 
-            <section class="partners__evidence-group partners__evidence-group--awards">
+            <section
+              class="partners__evidence-group partners__evidence-group--awards"
+            >
               <div class="partners__evidence-head">
                 <h3 class="partners__evidence-title">수상 2건</h3>
                 <p class="partners__evidence-copy">
@@ -927,7 +1018,9 @@
                   이력을 함께 제시합니다.
                 </p>
               </div>
-              <div class="partners__credential-grid partners__credential-grid--awards">
+              <div
+                class="partners__credential-grid partners__credential-grid--awards"
+              >
                 <article class="partners__credential-card">
                   <span class="partners__credential-badge">수상</span>
                   <h4 class="partners__credential-name">
@@ -950,7 +1043,9 @@
                 </article>
                 <article class="partners__credential-card">
                   <span class="partners__credential-badge">수상</span>
-                  <h4 class="partners__credential-name">중소벤처기업부 장관상</h4>
+                  <h4 class="partners__credential-name">
+                    중소벤처기업부 장관상
+                  </h4>
                   <dl class="partners__credential-meta">
                     <div>
                       <dt>기관</dt>
@@ -1087,8 +1182,9 @@
                 <span class="news__card-badge">보도자료</span>
                 <h3 class="news__card-title">보도자료</h3>
                 <p class="news__card-desc">
-                  외부 기사와 보도자료 흐름을 통해 아자스쿨의 사업 포지셔닝 변화,
-                  신뢰도, 확장 방향을 한눈에 확인할 수 있도록 정리했습니다.
+                  외부 기사와 보도자료 흐름을 통해 아자스쿨의 사업 포지셔닝
+                  변화, 신뢰도, 확장 방향을 한눈에 확인할 수 있도록
+                  정리했습니다.
                 </p>
               </div>
               <div class="news__press">
@@ -1174,8 +1270,8 @@
                       아자스쿨, 네이버와 손잡고 체험학습 시장 혁신 나서
                     </h4>
                     <p class="news__press-card-summary">
-                      네이버 시스템 연동과 약 3,000개 프로그램 기반으로 검색·신청
-                      편의를 확장한 유통 고도화 기사입니다.
+                      네이버 시스템 연동과 약 3,000개 프로그램 기반으로
+                      검색·신청 편의를 확장한 유통 고도화 기사입니다.
                     </p>
                   </a>
                   <a
@@ -1204,8 +1300,8 @@
                       외부 기사 아카이브
                     </h4>
                     <p class="news__press-archive-desc">
-                      2016년부터 2026년까지의 주요 기사와 보도자료를 연도 역순으로
-                      정리했습니다.
+                      2016년부터 2026년까지의 주요 기사와 보도자료를 연도
+                      역순으로 정리했습니다.
                     </p>
                   </div>
                   <div class="news__press-archive-list">
@@ -1240,8 +1336,8 @@
                           맞손
                         </h5>
                         <p class="news__press-archive-summary">
-                          AI·영어·금융교육 융합 프로그램과 해외 교육기관 협력 확대
-                          내용을 담고 있습니다.
+                          AI·영어·금융교육 융합 프로그램과 해외 교육기관 협력
+                          확대 내용을 담고 있습니다.
                         </p>
                       </div>
                       <a
@@ -1361,8 +1457,8 @@
                           2550개 맞춤형 체험학습 골라주네
                         </h5>
                         <p class="news__press-archive-summary">
-                          무료 진로적성 검사, 검사 결과 기반 추천, 활동 후 보고서
-                          문자 발송 등 AI 기능을 조명한 기사입니다.
+                          무료 진로적성 검사, 검사 결과 기반 추천, 활동 후
+                          보고서 문자 발송 등 AI 기능을 조명한 기사입니다.
                         </p>
                       </div>
                       <a
@@ -1381,8 +1477,8 @@
                           체험학습 플랫폼 아자스쿨, 2021년 매출 전년비 276% 증가
                         </h5>
                         <p class="news__press-archive-summary">
-                          12월 매출 1,149% 증가, O4O 체험센터, 롯데월드 민속박물관
-                          상시 체험관 운영을 소개합니다.
+                          12월 매출 1,149% 증가, O4O 체험센터, 롯데월드
+                          민속박물관 상시 체험관 운영을 소개합니다.
                         </p>
                       </div>
                       <a
@@ -1396,7 +1492,9 @@
                     <article class="news__press-archive-item">
                       <p class="news__press-archive-date">2021 · 2021.04.06</p>
                       <div class="news__press-archive-body">
-                        <p class="news__press-archive-meta">한국청소년활동진흥원</p>
+                        <p class="news__press-archive-meta">
+                          한국청소년활동진흥원
+                        </p>
                         <h5 class="news__press-archive-item-title">
                           한국청소년활동진흥원, 아자스쿨(주) 업무협약 체결
                         </h5>
@@ -1422,7 +1520,8 @@
                           플랫폼
                         </h5>
                         <p class="news__press-archive-summary">
-                          체험의 교육적 가치와 아자스쿨 플랫폼을 소개한 기사입니다.
+                          체험의 교육적 가치와 아자스쿨 플랫폼을 소개한
+                          기사입니다.
                         </p>
                       </div>
                       <a
@@ -1461,8 +1560,8 @@
                           1000개의 체험학습 갖춘 특별한 학교…‘아자스쿨’
                         </h5>
                         <p class="news__press-archive-summary">
-                          모바일 어워드와 함께 체험학습 플랫폼·진로적성 검사·보고서
-                          자동화 기능을 소개합니다.
+                          모바일 어워드와 함께 체험학습 플랫폼·진로적성
+                          검사·보고서 자동화 기능을 소개합니다.
                         </p>
                       </div>
                       <a
@@ -1481,8 +1580,8 @@
                           ‘대한민국 모바일 어워드 2018’ 3월의 모바일은?
                         </h5>
                         <p class="news__press-archive-summary">
-                          아자스쿨이 이달의 우수 모바일 서비스로 선정됐다고 소개한
-                          기사입니다.
+                          아자스쿨이 이달의 우수 모바일 서비스로 선정됐다고
+                          소개한 기사입니다.
                         </p>
                       </div>
                       <a
@@ -1501,8 +1600,8 @@
                           올 겨울, 꿈을 키우는 ‘아자스쿨’로 떠나요!
                         </h5>
                         <p class="news__press-archive-summary">
-                          겨울방학 체험 프로그램 소개를 통해 아자스쿨 초기 서비스가
-                          외부에 노출된 기사입니다.
+                          겨울방학 체험 프로그램 소개를 통해 아자스쿨 초기
+                          서비스가 외부에 노출된 기사입니다.
                         </p>
                       </div>
                       <a
@@ -1813,6 +1912,8 @@
         </div>
       </div>
     </footer>
+
+    <button class="back-to-top" aria-label="맨 위로 가기">&#x2191;</button>
 
     <script src="script.js"></script>
   </body>

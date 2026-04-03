@@ -4,12 +4,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   /* ----------------------------------------------------------
-     GNB: scroll background + active link
+     GNB: scroll background + active link + scroll progress + back-to-top
      ---------------------------------------------------------- */
   const gnb = document.querySelector('.gnb');
   const gnbLinks = document.querySelectorAll('.gnb__link');
   const sections = document.querySelectorAll('section[id]');
   const newsCategories = document.querySelectorAll('.news__category');
+  const scrollProgress = document.querySelector('.scroll-progress');
+  const backToTop = document.querySelector('.back-to-top');
 
   function onScroll() {
     // Background toggle
@@ -36,6 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     updateNewsCategoryState();
+
+    // Scroll progress bar
+    if (scrollProgress) {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+      scrollProgress.style.width = scrollPercent + '%';
+    }
+
+    // Back to top button
+    if (backToTop) {
+      if (window.scrollY > 600) {
+        backToTop.classList.add('back-to-top--visible');
+      } else {
+        backToTop.classList.remove('back-to-top--visible');
+      }
+    }
   }
 
   function updateNewsCategoryState() {
@@ -71,6 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', updateNewsCategoryState);
   onScroll();
+
+  // Back to top click
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
   /* ----------------------------------------------------------
      GNB: smooth scroll on link click
@@ -113,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (overlay) overlay.addEventListener('click', closeDrawer);
 
   /* ----------------------------------------------------------
-     Scroll reveal (IntersectionObserver)
+     Scroll reveal (IntersectionObserver) with staggered delay
      ---------------------------------------------------------- */
   const revealEls = document.querySelectorAll('.reveal');
 
@@ -122,6 +147,8 @@ document.addEventListener('DOMContentLoaded', () => {
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
+            const delay = entry.target.dataset.delay;
+            if (delay) entry.target.style.transitionDelay = delay + 's';
             entry.target.classList.add('revealed');
             observer.unobserve(entry.target);
           }
@@ -137,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ----------------------------------------------------------
-     Animated counters
+     Animated counters with pulse on completion
      ---------------------------------------------------------- */
   const counters = document.querySelectorAll('[data-count]');
 
@@ -176,6 +203,8 @@ document.addEventListener('DOMContentLoaded', () => {
       el.textContent = current.toLocaleString() + suffix;
       if (progress < 1) {
         requestAnimationFrame(tick);
+      } else {
+        el.classList.add('counter-done');
       }
     }
 
@@ -183,24 +212,52 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ----------------------------------------------------------
-     History tabs
+     History tabs with fade transition
      ---------------------------------------------------------- */
   const historyTabs = document.querySelectorAll('.history__tab');
-  const historyEras = document.querySelectorAll('.history__era');
+  let historyTransitioning = false;
 
   historyTabs.forEach(tab => {
     tab.addEventListener('click', () => {
+      if (historyTransitioning) return;
       const era = tab.dataset.era;
+      const currentActive = document.querySelector('.history__era--active');
+      const nextEra = document.querySelector(`.history__era[data-era="${era}"]`);
+      if (currentActive === nextEra) return;
 
+      historyTransitioning = true;
+
+      // Update tab styling immediately
       historyTabs.forEach(t => t.classList.remove('history__tab--active'));
       tab.classList.add('history__tab--active');
 
-      historyEras.forEach(e => {
-        e.classList.remove('history__era--active');
-        if (e.dataset.era === era) {
-          e.classList.add('history__era--active');
+      // Fade out current
+      if (currentActive) {
+        currentActive.style.opacity = '0';
+        currentActive.style.transform = 'translateY(12px)';
+      }
+
+      setTimeout(() => {
+        // Hide old, show new
+        if (currentActive) {
+          currentActive.classList.remove('history__era--active');
+          currentActive.style.opacity = '';
+          currentActive.style.transform = '';
         }
-      });
+        nextEra.classList.add('history__era--active');
+        nextEra.style.opacity = '0';
+        nextEra.style.transform = 'translateY(12px)';
+
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            nextEra.style.opacity = '1';
+            nextEra.style.transform = 'translateY(0)';
+            setTimeout(() => {
+              historyTransitioning = false;
+            }, 400);
+          });
+        });
+      }, 300);
     });
   });
 });
