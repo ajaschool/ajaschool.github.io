@@ -1128,12 +1128,6 @@ button {
     transform 0.2s;
 }
 
-.impact__case-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 8px 24px rgba(27, 42, 74, 0.12);
-  transform: translateY(-4px);
-}
-
 .impact__case-card-images {
   position: relative;
   height: 200px;
@@ -1166,14 +1160,14 @@ button {
 }
 
 .impact__case-card-img:hover:first-child {
-  transform: rotate(-3deg) scale(1.5);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  transform: rotate(0deg) scale(2);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
 
 .impact__case-card-img:hover:last-child {
-  transform: rotate(2deg) scale(1.5);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  transform: rotate(0deg) scale(2);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
 
@@ -1355,15 +1349,7 @@ button {
 }
 
 .partners__credential-badge {
-  display: inline-flex;
-  align-self: flex-start;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(43, 122, 120, 0.08);
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  display: none;
 }
 
 .partners__credential-name {
