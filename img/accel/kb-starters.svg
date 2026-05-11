@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" preserveAspectRatio="xMidYMid meet">
+  <rect width="360" height="240" fill="#ffffff"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Noto Sans KR', sans-serif" text-anchor="middle">
+    <rect x="115" y="80" width="130" height="44" rx="6" fill="#ffbc00"/>
+    <text x="180" y="113" font-size="28" font-weight="900" fill="#1a1a1a" letter-spacing="2">KB ★</text>
+    <text x="180" y="160" font-size="26" font-weight="800" fill="#111827" letter-spacing="1">Starters</text>
+  </g>
+</svg>

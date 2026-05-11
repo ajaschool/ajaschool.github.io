@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" preserveAspectRatio="xMidYMid meet">
+  <rect width="360" height="240" fill="#ffffff"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Noto Sans KR', sans-serif" text-anchor="middle">
+    <text x="180" y="105" font-size="22" font-weight="700" fill="#0046ff" letter-spacing="3">SHINHAN</text>
+    <text x="180" y="148" font-size="34" font-weight="800" fill="#0a1f44" letter-spacing="-1">SQUARE</text>
+    <text x="180" y="178" font-size="14" font-weight="500" fill="#6b7280" letter-spacing="3">BRIDGE GLOBAL</text>
+  </g>
+</svg>

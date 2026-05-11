@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" preserveAspectRatio="xMidYMid meet">
+  <rect width="360" height="240" fill="#ffffff"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Noto Sans KR', sans-serif" text-anchor="middle">
+    <text x="180" y="118" font-size="50" font-weight="900" fill="#0f4a8a" letter-spacing="3">SBA</text>
+    <text x="180" y="160" font-size="22" font-weight="700" fill="#111827" letter-spacing="2">DEEP TECH</text>
+  </g>
+</svg>

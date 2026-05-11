@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" preserveAspectRatio="xMidYMid meet">
+  <rect width="360" height="240" fill="#ffffff"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Noto Sans KR', sans-serif" text-anchor="middle">
+    <text x="180" y="115" font-size="46" font-weight="800" fill="#0f3a6b" letter-spacing="-1">이동국</text>
+    <text x="180" y="158" font-size="16" font-weight="500" fill="#6b7280" letter-spacing="3">INDIVIDUAL INVESTOR</text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" preserveAspectRatio="xMidYMid meet">
+  <rect width="360" height="240" fill="#ffffff"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Noto Sans KR', sans-serif" text-anchor="middle">
+    <text x="180" y="118" font-size="42" font-weight="800" fill="#1f2a44" letter-spacing="-1">HUMANITAS</text>
+    <text x="180" y="158" font-size="20" font-weight="500" fill="#6b7280" letter-spacing="2">투자조합</text>
+  </g>
+</svg>
