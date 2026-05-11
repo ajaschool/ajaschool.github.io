@@ -5,6 +5,14 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
+# 로컬 전용 환경 변수 로드 (.env, gitignore 처리됨)
+if [ -f "$PROJECT_ROOT/.env" ]; then
+  set -a
+  # shellcheck disable=SC1091
+  . "$PROJECT_ROOT/.env"
+  set +a
+fi
+
 # REMOTE_TARGET: 로컬 ~/.ssh/config 에 정의된 SSH alias (실제 IP/Key는 ssh config 에서 관리)
 REMOTE_TARGET="${REMOTE_TARGET:-ajaschool-dev}"
 REMOTE_HOME="${REMOTE_HOME:-/home/ubuntu}"
@@ -37,7 +45,7 @@ echo "==> 압축"
 rm -f "$ARCHIVE_PATH"
 tar -czf "$ARCHIVE_PATH" -C "$(dirname "$STAGING_DIR")" company
 
-echo "==> EC2 업로드 ($REMOTE_TARGET)"
+echo "==> EC2 업로드 ($REMOTE_TARGET${REMOTE_IP:+ / $REMOTE_IP})"
 scp "$ARCHIVE_PATH" "$REMOTE_TARGET:$REMOTE_ARCHIVE"
 
 echo "==> 원격 서버 배포"
